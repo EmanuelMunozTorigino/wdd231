@@ -1,0 +1,31 @@
+header {
+    background-color: blueviolet;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    display: flex;
+}
+
+
+.section-container {
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-heading {
+    background: blueviolet;
+    padding: .5rem;
+}
+
+
+.nav-link {
+    text-decoration: none;
+}
+
+a.active {
+    color: aqua;
+}

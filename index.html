@@ -6,6 +6,7 @@
     <meta name="description" content="A course assignment portal of WDD 231 – Web Frontend Development for the chamber commerce project of the next 7 weeks by Emanuel Muñoz Torigino"> <!-- less than 150 characters as a good practice of SEO-->
     <meta name="author" content="Emanuel Muñoz Torigino">
 
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
@@ -17,23 +18,13 @@
 
     <header>
 
-        <img >
-
-
-        <picture>
-            <source srcset="image.webp" type="image/webp">
-            <source srcset="image.jpg" type="image/jpeg">
-            <img src="" alt="Profile photo - Emanuel Muñoz">
-          </picture>
-
+        <img src="images/profilePhoto.jpg" alt="Profile photo - Emanuel Muñoz" width="100px">
         <h1>Emanuel Muñoz Torigino</h1>
-        
-
 
     </header>
 
     <nav>
-        <ul>
+        <ul class="nav-list">
             <li><a href="index.html" class="nav-link active">Home</a></li>
             <li><a href="#" class="nav-link">Chamber</a></li>
             <li><a href="https://github.com/EmanuelMunozTorigino" class="nav-link" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
@@ -43,8 +34,8 @@
 
     <main>
 
-        <section>
-            <h2>Course Work</h2>
+        <section class="section-container">
+            <h2 class="section-heading">Course Work</h2>
             <ul>
                 <li></li>
                 <li></li>
@@ -56,20 +47,17 @@
         </section>
 
 
-        <section>
-            <h2>Place Name</h2>
-            
-            <picture>
-                <source srcset="#" type="image/webp">
-                <source srcset="#" type="image/jpeg">
-                <img src="images/cabj-stadium.png" alt="Boca Juniors Soccer Club">
-              </picture>
-
+        <section class="section-container">
+            <h2 class="section-heading">Buenos Aires, Argentina</h2>
+                <img src="images/cabj-stadium.png" width="300px" alt="Boca Juniors Soccer Club">
+                <p>
+                    Boca Juniors Soccer Club Stadium
+                </p>
         </section>
         
         
-        <section>
-            <h2>Web and Computer Programming Certificate</h2>
+        <section class="section-container">
+            <h2 class="section-heading">Web and Computer Programming Certificate</h2>
         </section>
 
     </main>

@@ -1,0 +1,16 @@
+@media screen and (min-width: 600px) {
+    
+
+    
+    .nav-list {
+        display: flex;
+        background-color: goldenrod;
+        margin: 0 auto;
+        list-style-type: none;
+        align-items: center;
+        justify-content: space-around;
+        padding: .5rem;
+    }
+
+    
+}
