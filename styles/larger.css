@@ -1,16 +1,45 @@
 @media screen and (min-width: 600px) {
     
 
-    
+    header > h1 {
+        font-size: xx-large;
+        transition: 2000ms;
+    }
+
     .nav-list {
         display: flex;
-        background-color: goldenrod;
-        margin: 0 auto;
-        list-style-type: none;
-        align-items: center;
-        justify-content: space-around;
+    }
+
+    .nav-link {
         padding: .5rem;
     }
 
+    .nav-list li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
     
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+        
+    .section-container-I {
+        grid-column: 1/2;
+    }
+
+    .section-container-II {
+        grid-column: 2/3;
+    }
+
+    .section-container-III{
+        grid-column: 1/3;
+    }
+
 }

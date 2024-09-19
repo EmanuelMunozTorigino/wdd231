@@ -7,25 +7,134 @@ header {
     display: flex;
 }
 
+header > h1 {
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: larger;
+    transition: 2000ms;
+}
 
-.section-container {
-    padding: 1rem;
+header > img {
+    padding-left: 3rem;
+}
+
+#menu {
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+	font-size: 3rem;
+	font-weight:700;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+
+.nav-list {
     margin: 0 auto;
+    padding-left: 0;
     text-align: center;
     align-items: center;
     justify-content: center;
+    list-style-type: none;
+    font-size: larger;
+    font-weight: 900;
+    background-color: tomato;
 }
 
-.section-heading {
-    background: blueviolet;
-    padding: .5rem;
+.nav-list li {
+    display: none;
 }
 
 
 .nav-link {
+    color: beige;
+    padding: .2rem;
+    display: block;
     text-decoration: none;
 }
 
-a.active {
-    color: aqua;
+.nav-link:hover {
+    color: beige;
+    background-color: black;
+}
+
+.nav-link.active {
+    color:rgba(255, 0, 93, 0.818);
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "x";
+}
+
+.show li {
+    display: block;
+}
+
+
+
+.section-container-I,
+.section-container-II,
+.section-container-III{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgba(157, 0, 255, 0.606);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.section-heading {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    background: blueviolet;
+    padding: .5rem;
+}
+
+  
+
+.cabj-stadium-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+ 
+.cabj-stadium-desc {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 250px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    background-color: #222;
+    color: aliceblue;
+    opacity: .9;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font: italic smaller sans-serif;
+  }
+
+
+
+
+
+footer {
+    margin: 0 auto;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .2rem;
+
+}
+
+
+#lastModified {
+    font-weight: bold;
+    font-size: large;
 }
