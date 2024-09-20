@@ -1,5 +1,5 @@
 header {
-    background-color: blueviolet;
+    background-color: rgb(50, 28, 173);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -93,7 +93,7 @@ header > img {
     align-items: center;
     justify-content: center;
     margin-top: 0;
-    background: blueviolet;
+    background: rgb(50, 28, 173);
     padding: .5rem;
 }
 
@@ -102,13 +102,14 @@ header > img {
 .cabj-stadium-img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    margin-bottom: 0;
 }
  
 .cabj-stadium-desc {
     margin: 0 auto;
     box-sizing: border-box;
     width: 250px;
-    margin-top: 0;
+    margin-top: -3px;
     margin-bottom: 1rem;
     padding: .5rem;
     background-color: #222;
@@ -120,12 +121,9 @@ header > img {
   }
 
 
-
-
-
 footer {
     margin: 0 auto;
-    background-color: blueviolet;
+    background-color: rgb(50, 28, 173);
     align-items: center;
     justify-content: center;
     text-align: center;
