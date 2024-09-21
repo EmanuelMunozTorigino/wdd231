@@ -87,8 +87,6 @@ header > img {
     display: block;
 }
 
-
-
 .section-container-I,
 .section-container-II,
 .section-container-III{
@@ -111,7 +109,6 @@ header > img {
     padding: .5rem;
 }
 
-  
 
 .cabj-stadium-img {
     border-top-left-radius: 15px;
@@ -133,6 +130,22 @@ header > img {
     font: italic smaller sans-serif;
   }
 
+  #filtered {
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-bottom: 2px rgba(213, 200, 221, 0.606) solid;
+}
+
+  #filtered button {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 10%;
+    background-color: black;
+    color: #ECF0F1;
+  }
 
 footer {
     align-items: center;
