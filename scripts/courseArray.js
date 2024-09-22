@@ -138,10 +138,37 @@ $mainContainer.appendChild($filteredContainer);
 
 const dynamicButtons = $filteredContainer.getElementsByTagName("button");
 
+// Getting the total credits of the first certificate and display it on the Courses section
+
+let totalCredits = courses.reduce(
+  (fullCredits, courses) => fullCredits + courses.credits,
+  0
+);
+
+const creditsContainer = document.createElement("div");
+
+// Added some margin..!
+
+creditsContainer.style.margin = ".5rem";
+
+const courseURL =
+  "https://www.byupathway.edu/certificate/web-computer-programming";
+
+courseURL.textContent = "Web and Computer Programming";
+
+creditsContainer.innerHTML = `The Certificate '<strong><a class="course-link" href="${courseURL}" target="_blank" rel="noopener noreferrer">Web and Computer Programming</a></strong>' has: <strong>${totalCredits}</strong> credits`;
+
+$mainContainer.appendChild(creditsContainer);
+
+console.log(creditsContainer.getElementsByClassName("a"));
+
+/*
+creditsContainer.getElementsByTagName("a").classList.add(".nav-link");
+*/
+
 displayCourses(courses);
 
 //  Use the buttons and the click event to filter the courses with its Text content - "CSE", "WDD" or "All"..
-
 
 Array.from(dynamicButtons).forEach((button) => {
   button.addEventListener("click", () => {

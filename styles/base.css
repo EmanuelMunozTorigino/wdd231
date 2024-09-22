@@ -70,6 +70,16 @@ header > img {
     background-color: rgba(255, 255, 255, .2);
 }
 
+/* Link de course added dynamically with JavaScript (courseArray.js) line 155.. */
+
+.course-link {
+    text-decoration: none;
+    color: #00645a;
+}
+
+.course-link:hover {
+    color: #9024a2;
+}
 
 .nav-link.active {
     color: #3498DB;
