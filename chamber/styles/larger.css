@@ -1,0 +1,50 @@
+@media screen and (min-width: 600px) {
+    
+    img {
+        max-width: 100%;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 1.5rem;
+        
+    }
+
+    main {
+        box-sizing: border-box;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+        
+    #darkMode {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 3rem;
+        font-weight:700;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: flex;
+        padding-right: 2.5rem;
+    }
+
+    .nav-link {
+        padding: .5rem;
+    }
+
+    .nav-list li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+    
+
+
+}
