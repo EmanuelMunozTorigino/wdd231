@@ -156,7 +156,7 @@ const courseURL =
 
 courseURL.textContent = "Web and Computer Programming";
 
-creditsContainer.innerHTML = `The Certificate '<strong><a class="course-link" href="${courseURL}" target="_blank" rel="noopener noreferrer">Web and Computer Programming</a></strong>' has: <strong>${totalCredits}</strong> credits`;
+creditsContainer.innerHTML = `The total number of credits to The Certificate '<strong><a class="course-link" href="${courseURL}" target="_blank" rel="noopener noreferrer">Web and Computer Programming</a></strong>' is <strong>${totalCredits}</strong>`;
 
 $mainContainer.appendChild(creditsContainer);
 
