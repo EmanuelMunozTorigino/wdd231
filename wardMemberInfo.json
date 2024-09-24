@@ -1,0 +1,28 @@
+{
+    "family_name": "Diaz",
+    "move_date": "12-17-2018",
+    "total_family_memeber": 4,
+    "bishopric_visit": true,
+    "family_member" : [
+        {
+           "name": "Mia Diaz",
+           "gender": "female",
+           "birthdate": "07-21-2002"
+        },
+        {
+           "name": "Emanuel Diaz",
+           "gender": "male",
+           "birthdate": "04-28-2000"
+        },
+        {
+           "name": "Miguel Diaz",
+           "gender": "male",
+           "birthdate": "11-11-2016"
+        },
+        {
+           "name": "Violeta Diaz",
+           "gender": "female",
+           "birthdate": "05-08-2015"
+        }
+    ]
+}
