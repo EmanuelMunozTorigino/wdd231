@@ -3,6 +3,7 @@
 
 header {
     background-color: #1C3D5A;
+    color: #FFFFFF;
 }
 
 
@@ -59,17 +60,17 @@ header div strong {
     padding: 1rem;
     display: block;
     text-decoration: none;
-    color: #1C3D5A;
+    color:  #1a73e8;
 }
 
 
 .nav-link.active {
-    color: #FF7F50;
+    color:#868686;
 
 }
 
 .nav-link:hover {
-    color: #FF7F50;
+    color: #5599f4;
 }
 
 
@@ -91,6 +92,11 @@ header div strong {
 
 /* Directory page main layout*/ 
 
+.directoryHeading {
+    text-align: center;
+    box-shadow: 2px 2px 1px 2px ;
+}
+
 
 .displayMenu {
     margin: 1rem;
@@ -105,7 +111,7 @@ header div strong {
     font-size: 1.2rem;
     font-weight: bolder;
     margin: 0 .5rem ;
-    box-shadow: 2px 2px 1px #FF7F50;
+    box-shadow: 2px 2px 2px #083350;
     
 }
 
@@ -113,8 +119,75 @@ header div strong {
     margin: 0;
     padding: 0;
     width: 20px;
-
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    grid-gap: .5rem;
+    margin: 1rem;
+}
+
+.grid section {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 300px;
+    padding: 1rem;
+    border: 2px solid #9bb4c7;
+    background-color: #f0f4f8;
+    color: #1a2e3b;
+ 
+}
+
+.grid section a,
+.list section a {
+    margin: 0 1rem;
+    color: #2a9df4;
+}
+
+.grid section img {
+    border-radius: 10px;
+    filter: drop-shadow(2px, 2px, 3px, black);
+}
+
+
+.grid section h2 {
+    display: none;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    text-align: start;
+    justify-content: space-between;
+}
+
+.list section {
+    display: block;
+    margin: 0;
+    padding: 0.25rem;
+    color: #1a2e3b;
+    border: 1px solid #9bb4c7;
+    align-items: center;
+}
+
+
+.list section > * {
+    margin: 0 1rem;
+}
+
+
+.list section:nth-child(even) {
+    background-color: #f0f4f8;
+}
+
+
+.list section img {
+    display: none;
+}
+
 
 /* Home page to chamber of commerce (index.html) Layout */
 
@@ -156,6 +229,16 @@ header div strong {
 footer {
     background-color: #1C3D5A;
     padding: 1rem;
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #5599f4;
 }
 
 #lastModified {
@@ -172,7 +255,46 @@ body.dark-mode {
     color: #E0E0E0;
   }
 
+  
+  header.dark-mode, footer.dark-mode {
+      background-color: #1a2430;
+      color: #d1dbe8;
+      
+  } 
 
-header.dark-mode {
-  background-color: #1A1A1A;
+main .dark-mode section {
+    background-color: #2e3b4e;
+    border: 2px solid #4a6078;
+    color: #cdd6e2;
+}
+
+main .dark-mode section a{
+    color: #68c2ff;
+}
+
+.dark-mode a {
+    color: #68c2ff;
+
+}
+
+.dark-mode a:hover {
+    color: #9ed6ff;
+}
+
+.dark-mode .nav-list {
+    background-color: #1e1e1e ;
+}
+
+
+.dark-mode .list section{    
+    background-color: #2e3b4e;
+    border: 1px solid #4a6078;
+    color: #cdd6e2;
+    
+}
+
+
+.dark-mode .btnMenu {
+    background-color: #1a2430;
+    color: #68c2ff;
 }
