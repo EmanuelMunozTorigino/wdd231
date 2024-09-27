@@ -1,0 +1,38 @@
+
+body {
+    box-sizing: border-box;
+    text-align: center;
+    margin: .5rem;
+    background-color: #232222;
+}
+
+h1 {
+    color: gray;
+}
+h2 {
+    color: #112dcc;
+    margin: .2rem;
+}
+
+p {
+    margin: .3rem;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: .2rem;
+}
+
+
+section {
+    padding: 1rem;
+    background-color: darkgray;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+section img {
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 3px 3px 3px 2px black;
+}

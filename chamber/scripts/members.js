@@ -1,18 +1,32 @@
 const gridbtn = document.getElementById("gridButton");
 const listbtn = document.getElementById("listButton");
 
-const url = "/data/members.json";
+const url =
+  "https://emanuelmunoztorigino.github.io/wdd231/chamber/data/members.json";
 
-companiesList = [];
-
-const getCompanies = async (url) => {
+async function getCompanies(url) {
   const response = await fetch(url);
 
   if (response) {
     companiesList = await response.json();
+
+    console.table(companiesList.companies);
+
+    displayCompanies(companiesList.companies);
   }
+}
+
+const displayCompanies = (companiesList) => {
+  const $articleContainer = document.createElement("article");
+  const $sectionContainer = document.createElement("section");
+
+  const $companyLogo = document.createElement("img");
+
+  const $addressPara = document.createElement("P");
+
+  const $phoneNumberPara = document.createElement("P");
+
+  const $companyURL = document.createElement("a");
 };
 
-getCompanies(url);
-
-console.log(companiesList);
+let companiesList = getCompanies(url);
