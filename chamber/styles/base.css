@@ -1,7 +1,9 @@
 
 /* Header Layout */
 
-
+header {
+    background-color: #1C3D5A;
+}
 
 
 header div {
@@ -39,35 +41,35 @@ header div strong {
 
 
 .nav-list {
+    background-color: #ffffff;
     margin: 0 auto;
     padding-left: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
+    text-align: start;
     font-size: larger;
     font-weight: 900;
 }
 
+
 .nav-list li {
-    
     display: none;
 }
 
 .nav-link {
-    padding: .2rem;
+    border-bottom: solid 1px gray;
+    padding: 1rem;
     display: block;
     text-decoration: none;
+    color: #1C3D5A;
 }
 
+
 .nav-link.active {
-    border-bottom: 2px solid;
-    padding-bottom: .4rem;
+    color: #FF7F50;
 
 }
 
 .nav-link:hover {
-    color: rgb(181, 181, 21);
+    color: #FF7F50;
 }
 
 
@@ -84,7 +86,42 @@ header div strong {
 }
 
 
-/* Main Section*/
+/* -------  Main Section  ---------*/
+
+
+/* Directory page main layout*/ 
+
+
+.displayMenu {
+    margin: 1rem;
+    text-align: center;
+}
+
+.btnMenu {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #1C3D5A;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 0 .5rem ;
+    box-shadow: 2px 2px 1px #FF7F50;
+    
+}
+
+.btnMenu img {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+
+}
+
+/* Home page to chamber of commerce (index.html) Layout */
+
+.heroimg-container {
+    margin: 1rem;
+}
+
 
 .info-container {
     background-color: #696868;
@@ -117,7 +154,7 @@ header div strong {
 /* Footer */
 
 footer {
-    background-color: #696868;
+    background-color: #1C3D5A;
     padding: 1rem;
 }
 
@@ -132,26 +169,10 @@ footer {
 
 body.dark-mode {
     background-color: #1e1e1e;
-    color: #f5f5f5;
+    color: #E0E0E0;
   }
 
 
 header.dark-mode {
-  background-color: #1e1e1e;
+  background-color: #1A1A1A;
 }
-
-
-
-background-color: #ffffff;
-color: #000000;
-
-
-background-color: #f0f0f0;
-
-
-background-color: #333333;
-
-
-
-background-color: #1e1e1e;
-color: #f5f5f5;

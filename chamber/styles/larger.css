@@ -28,17 +28,21 @@
     }
 
     .nav-list {
+        border-bottom: none;
         display: flex;
         padding-right: 2.5rem;
+        background-color: inherit;
     }
+    
+        .nav-list li {
+            display: block;
+            flex: 1 1 100%;
+        }
 
     .nav-link {
+        color: #FFFFFF;
         padding: .5rem;
-    }
-
-    .nav-list li {
-        display: block;
-        flex: 1 1 100%;
+        border-bottom: none;
     }
 
     #menu {

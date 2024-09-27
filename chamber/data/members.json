@@ -1,0 +1,75 @@
+[
+    {
+        "name": "Rizobacter",
+        "address": "Avda. Dr. Arturo Frondizi Nº 1150, Parque Industrial, Pergamino, Buenos Aires",
+        "phoneNumber": "+54 (02477) 40-9400",
+        "websiteURL": "https://rizobacter.com.ar/es",
+        "logo": "../images/rizobacter-logo.jpg", 
+        "membershipLevel": 3
+    },
+    {
+        "name": "Inpla",
+        "address": "Av. Enrique Venini 155, Pergamino, Buenos Aires",
+        "phoneNumber": "+54 (02477) 44-1230",
+        "websiteURL": "https://www.inpla.com.ar/",
+        "logo": "../images/inpla-logo.png", 
+        "membershipLevel": 1
+    },
+    {      
+        "name": "Teknal",
+        "address": "Ruta 8, km. 218, Pergamino, Buenos Aires",
+        "phoneNumber": "+54 (02477) 43-6800",
+        "websiteURL": "www.teknal.com.ar",
+        "logo": "../images/teknal-logo.png", 
+        "membershipLevel": 3
+    },
+    {
+        "name": "Nidera Semillas",
+        "address": "Ruta 8, km. 226,5, Pergamino, Buenos Aires",
+        "phoneNumber": "+54 (02477) 53-7057",
+        "websiteURL": "https://niderasemillas.com.ar/",
+        "logo": "../images/nidera-logo.svg", 
+        "membershipLevel": 2
+    },
+    
+    {
+        "name": "Syngenta",
+        "address": "Avda. Dr. Arturo Frondizi Nº 1150, Parque Industrial, Pergamino, Buenos Aires",
+        "phoneNumber": "0800-444-4804",
+        "websiteURL": "https://www.syngenta.com.ar/",
+        "logo": "../images/syngenta-logo.svg", 
+        "membershipLevel": 2
+    },
+    {
+        "name": "Don Mario",
+        "address": "Ruta 7 Km 208, Chacabuco, Buenos Aires",
+        "phoneNumber": "+54 (02352) 43-9100",
+        "websiteURL": "https://www.donmario.com/",
+        "logo": "../images/donmario-logo.svg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Mundo Agro",
+        "address": "Av. de Mayo 1250, Pergamino, Buenos Aires",
+        "phoneNumber": "+54 (02477) 41-0620",
+        "websiteURL": "https://mundoagro.cl/",
+        "logo": "../images/mundoagro-logo.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Celpinf",
+        "address": "Av. de Mayo 501, Pergamino, Buenos Aires",
+        "phoneNumber": "+54 (02477) 41-9987",
+        "websiteURL": "https://www.celp.com.ar/",
+        "logo": "../images/celpinf-logo.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Agrosanaja S.R.L",
+        "address": "Ruta Nacional 32 Km 3, Pergamino",
+        "phoneNumber": "+54 (02477) 66-3054",
+        "websiteURL": "https://agronasaja.com.ar/es",
+        "logo": "../images/agronasaja-logo.png",
+        "membershipLevel": 1
+    }
+]
