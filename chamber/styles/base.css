@@ -60,12 +60,12 @@ header div strong {
     padding: 1rem;
     display: block;
     text-decoration: none;
-    color:  #1a73e8;
+    color:  #65a8ff;
 }
 
 
 .nav-link.active {
-    color:#868686;
+    color:#a6a6a6;
 
 }
 
@@ -142,7 +142,7 @@ header div strong {
 .grid section a,
 .list section a {
     margin: 0 1rem;
-    color: #2a9df4;
+    color: #175585;
 }
 
 .grid section img {
@@ -233,12 +233,12 @@ footer {
 }
 
 footer a {
-    color: #1a73e8;
+    color: #ffc516;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #5599f4;
+    color: #ffbeaa;
 }
 
 #lastModified {
@@ -269,7 +269,7 @@ main .dark-mode section {
 }
 
 main .dark-mode section a{
-    color: #68c2ff;
+    color: #74d9ff;
 }
 
 .dark-mode a {
