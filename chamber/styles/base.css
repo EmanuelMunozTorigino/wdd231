@@ -147,7 +147,7 @@ header div strong {
 
 .grid section img {
     border-radius: 10px;
-    filter: drop-shadow(2px, 2px, 3px, black);
+    filter: drop-shadow(2px 2px 3px black);
 }
 
 
