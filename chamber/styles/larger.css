@@ -36,10 +36,10 @@
         background-color: inherit;
     }
     
-        .nav-list li {
-            display: block;
-            flex: 1 1 100%;
-        }
+    .nav-list li {
+        display: block;
+        flex: 1 1 100%;
+    }
 
     .nav-link {
         padding: .5rem;
@@ -48,6 +48,10 @@
 
     .dark-mode .nav-list {
         background-color: inherit;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
     }
 
 

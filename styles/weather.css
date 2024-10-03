@@ -1,0 +1,24 @@
+
+
+body {
+    text-align: center;
+    background-color: burlywood;
+}
+
+main {
+    width: 80%;
+    border:gray 2px solid;
+    background-color: rgba(245, 245, 220, 0.28);
+    margin: 0 auto;
+    border-radius: 15px;   
+}
+
+p {
+    font-size: x-large;
+    font-weight: 500;
+    margin: 1rem;
+}
+
+footer {
+    margin: 1rem;
+}

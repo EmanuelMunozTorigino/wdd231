@@ -1,6 +1,6 @@
 // extract the 2 elements neccesary for the hamburger menu, the navigation bar and the button or link (≡) where the functionality will work on
 
-const $nav = document.querySelector(".nav-list");
+const $nav = document.getElementById("animateNav");
 
 const $hambutton = document.getElementById("menu");
 

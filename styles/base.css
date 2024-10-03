@@ -39,24 +39,15 @@ header > img {
 	color: #000000;
 }
 
-
-
 .nav-list {
-    margin: 0 auto;
+    margin: 0;
     padding-left: 0;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     list-style-type: none;
     font-size: larger;
     font-weight: 900;
     background-color: #000000;
 }
-
-.nav-list li {
-    display: none;
-}
-
 
 .nav-link {
     color: beige;
@@ -64,6 +55,24 @@ header > img {
     display: block;
     text-decoration: none;
 }
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {overflow: hidden;}
+
+nav.show {
+    grid-template-rows: 1fr;
+}
+
+/*
+.nav-list li {
+    display: none;
+}
+*/
 
 .nav-link:hover {
     color: beige;
@@ -93,9 +102,12 @@ header > img {
     content: "x";
 }
 
+/*
 .show li {
     display: block;
 }
+
+*/
 
 .section-container-I,
 .section-container-II,

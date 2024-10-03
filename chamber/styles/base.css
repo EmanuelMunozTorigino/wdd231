@@ -6,6 +6,10 @@ header {
     color: #FFFFFF;
 }
 
+img {
+    max-width: 100%;
+    max-height: fit-content;
+}
 
 header div {
     display: flex;
@@ -27,7 +31,6 @@ header div strong {
     top: 0;
     right: .3rem;
 	font-size: 3rem;
-	font-weight:700;
 	text-decoration: none;
 	color: #000000;
 }
@@ -43,17 +46,18 @@ header div strong {
 
 .nav-list {
     background-color: #ffffff;
-    margin: 0 auto;
+    margin: 0;
     padding-left: 0;
     text-align: start;
     font-size: larger;
     font-weight: 900;
 }
 
-
+/*
 .nav-list li {
     display: none;
 }
+*/
 
 .nav-link {
     border-bottom: solid 1px gray;
@@ -62,6 +66,20 @@ header div strong {
     text-decoration: none;
     color:  #65a8ff;
 }
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.8s ease-out;
+}
+
+nav ul {overflow: hidden;}
+
+nav.show {
+    grid-template-rows: 1fr;
+}
+
+
 
 
 .nav-link.active {
@@ -79,18 +97,105 @@ header div strong {
 }
 
 #menu.show::before {
-    content: "x";
+    content: "\2718";
+    font-size: 35px;
+    padding-right: 4px;
 }
 
+/*
 .show li {
     display: block;
 }
-
+*/
 
 /* -------  Main Section  ---------*/
 
+    /* Home page ( Index) */
 
-/* Directory page main layout*/ 
+
+.heroimg-container img {
+    position: relative;
+    top: 0;
+    left: auto;
+}
+
+
+.heroimg-container div {
+    position: absolute;
+}
+
+
+.hero-image-text {
+    position: relative;
+    top:-90px;
+    left: 15%;
+    font-size: large;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+
+.hero-image-button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #212529;
+    background: #212529;
+    
+}
+.hero-image-button:hover {
+    background: #fff;
+    color: #212529
+}
+
+
+
+.heroimg-container {
+    margin: 1rem;
+}
+
+
+.info-container {
+    background-color: #696868;
+
+}
+
+.info-container h2 {
+    text-align: center;
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+
+.business-container {
+    margin: 1rem;
+    padding: .1rem;
+    background-color: #696868;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.business-info-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+
+    /* Directory page main layout*/ 
 
 .directoryHeading {
     text-align: center;
@@ -188,40 +293,6 @@ header div strong {
     display: none;
 }
 
-
-/* Home page to chamber of commerce (index.html) Layout */
-
-.heroimg-container {
-    margin: 1rem;
-}
-
-
-.info-container {
-    background-color: #696868;
-
-}
-
-.info-container h2 {
-    text-align: center;
-    background-color: #2f2f2f;
-    color: #ffffff;
-}
-
-
-.business-container {
-    margin: 1rem;
-    padding: .1rem;
-    background-color: #696868;
-    border-radius: 10px;
-    text-align: center;
-}
-
-
-.business-info-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 
 /* Footer */
