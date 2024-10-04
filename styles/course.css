@@ -1,0 +1,29 @@
+body {
+    border: 2px solid blueviolet;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button {
+    border-radius: 5px;
+    background-color: beige;
+    border: 2px solid burlywood;
+    padding: .2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: burlywood;
+}
+
+
+table {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+th,tr {
+    background-color: beige;
+    padding: 1rem;
+}
