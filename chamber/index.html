@@ -51,7 +51,7 @@
     <script src="scripts/hamburgerMenu.js" defer></script>
     <script src="scripts/darkMode.js" defer></script>
     <script src="scripts/navActiveEffect.js" defer></script>
-    
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -96,9 +96,17 @@
             </article>
             
             <article class="article-container">
-            
-                <h2>Current Weather</h2>   
-            
+                <h2>Current Weather</h2>
+                <div id="weatherContainer" class="weatherFlex">
+                <div>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                </div>   
+                <p>Temp: <span id="current-temp"></span></p>
+                </div>
+
             </article>
             
             <article class="article-container">

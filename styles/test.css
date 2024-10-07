@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+header {
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: 44px 1fr 50px 44px;
+    text-align: center;
+    gap: .5rem;
+}
+
+nav {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: rgb(161, 161, 153);
+    padding: 0;
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: black;
+}
+
+
+footer {
+    margin-top: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    font-weight: bolder
+}

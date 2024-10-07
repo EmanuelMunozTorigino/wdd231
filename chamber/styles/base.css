@@ -164,14 +164,19 @@ nav.show {
 
 
 .info-container {
-    background-color: #696868;
-
+    background-color: rgb(156, 139, 139);
+    margin: 0 1rem;
+    border: 1px solid burlywood 
 }
+
+
+
+
 
 .info-container h2 {
     text-align: center;
-    background-color: #2f2f2f;
-    color: #ffffff;
+    background-color: beige;
+    color: teal;
 }
 
 

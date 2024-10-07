@@ -1,0 +1,57 @@
+@media screen and (min-width: 600px) {
+    
+
+    header {
+        grid-template-columns: auto;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .link {
+        padding: .5rem;
+    }
+    
+    nav ul li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    #menu {
+        display: none;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+        
+    .section-container-I {
+        grid-column: 1/2;
+    }
+
+    .section-container-II {
+        grid-column: 2/3;
+    }
+
+    .section-container-III{
+        grid-column: 1/3;
+    }
+
+    .course-container h3 {
+        display: inline-block;
+        width: 200px;
+    }
+
+    .section-container-II .course-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
