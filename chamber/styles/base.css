@@ -1,10 +1,15 @@
 
+
+
 /* Header Layout */
+
+
 
 header {
     background-color: #1C3D5A;
     color: #FFFFFF;
 }
+
 
 img {
     max-width: 100%;
@@ -20,7 +25,6 @@ header div {
 header div strong {
     padding-left: .5rem;    
 }
-
 
 /* Navbar Layout*/
 
@@ -43,9 +47,8 @@ header div strong {
 }
 
 
-
 .nav-list {
-    background-color: #ffffff;
+    background-color: #1a2430;
     margin: 0;
     padding-left: 0;
     text-align: start;
@@ -53,18 +56,13 @@ header div strong {
     font-weight: 900;
 }
 
-/*
-.nav-list li {
-    display: none;
-}
-*/
 
 .nav-link {
-    border-bottom: solid 1px gray;
     padding: 1rem;
     display: block;
     text-decoration: none;
     color:  #65a8ff;
+    color:  white;
 }
 
 nav {
@@ -83,9 +81,11 @@ nav.show {
 
 
 .nav-link.active {
-    color:#a6a6a6;
-
+    color: #5599f4;
+    border-bottom: 1px solid;
 }
+
+
 
 .nav-link:hover {
     color: #5599f4;
@@ -112,30 +112,47 @@ nav.show {
 
     /* Home page ( Index) */
 
-
-.heroimg-container img {
-    position: relative;
-    top: 0;
-    left: auto;
-}
-
-
 .heroimg-container div {
-    position: absolute;
+    position: relative;
 }
-
 
 .hero-image-text {
-    position: relative;
-    top:-90px;
-    left: 15%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgba(149, 112, 44);
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 2px black;
+    padding: .5rem;
+    border-radius: 10px;
+    
+}
+
+.hero-image-text-2 {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     font-size: large;
-    font-weight: bolder;
-    margin: 0 auto;
+    font-weight: bold;
+    background-color: #ffffff89;
+    color: rgb(149, 112, 44);
+    border-radius: 5px;
+    
 }
 
 
 .hero-image-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);   
     min-width: 130px;
     height: 40px;
     color: #fff;
@@ -143,23 +160,15 @@ nav.show {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
     display: inline-block;
     outline: none;
     border-radius: 20px;
     border: 2px solid #212529;
     background: #212529;
-    
 }
 .hero-image-button:hover {
     background: #fff;
-    color: #212529
-}
-
-
-
-.heroimg-container {
-    margin: 1rem;
+    color: #212529; 
 }
 
 
@@ -354,7 +363,8 @@ main .dark-mode section a{
 }
 
 .dark-mode a:hover {
-    color: #9ed6ff;
+    color: #d1dbe8;
+    color: white;
 }
 
 .dark-mode .nav-list {
