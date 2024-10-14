@@ -2,30 +2,54 @@ const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
-const highTemp = document.createElement("p");
-const lowTemp = document.createElement("p");
 const humidity = document.createElement("p");
 const sunrise = document.createElement("p");
 const sunset = document.createElement("p");
 
 const weatherContainer = document.getElementById("weatherContainer");
 
-weatherContainer.append(highTemp);
-weatherContainer.append(lowTemp);
 weatherContainer.append(humidity);
 weatherContainer.append(sunrise);
 weatherContainer.append(sunset);
 
-const url =
+const weatherURL =
   "https://api.openweathermap.org/data/2.5/weather?lat=-33.89&lon=-60.57&units=metric&appid=1a8b3655e7f30981b5dc4994bae68c0c";
+
+// Wheather Forecast 5 days 3 hours..
+
+const todayPara = document.getElementById("todayTemp");
+const tomorrowPara = document.getElementById("tomorrowTemp");
+const thirdTempPara = document.getElementById("thirdTemp");
+
+const weatherForecastURL =
+  "https://api.openweathermap.org/data/2.5/forecast?lat=-33.89&lon=-60.57&units=metric&appid=1a8b3655e7f30981b5dc4994bae68c0c";
 
 const getWeatherAPI = async () => {
   try {
-    const response = await fetch(url);
+    const response = await fetch(weatherURL);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
       displayWeather(data);
+    } else {
+      throw Error(await response.text());
+      /*
+      const text = response.text(
+        "The file was not founder or it not solve the convertion to json format"
+      );
+      console.log(text);
+      */
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const getWeatherForecastAPI = async () => {
+  try {
+    const response = await fetch(weatherForecastURL);
+    if (response.ok) {
+      const data = await response.json();
+      displayWeatherForecast(data);
     } else {
       throw Error(await response.text());
       /*
@@ -72,12 +96,59 @@ const displayWeather = (data) => {
     hour12: true,
     timeZone: "America/Argentina/Buenos_Aires",
   });
-
-  highTemp.innerHTML = `High: ${parseInt(data.main.temp_max)}°C`;
-  lowTemp.innerHTML = `Low: ${parseInt(data.main.temp_min)}°C`;
   humidity.innerHTML = `Humidity: ${parseInt(data.main.humidity)}%`;
   sunrise.innerHTML = `Sunrise: ${sunriseTime}`;
   sunset.innerHTML = `Sunset: ${sunsetTime}`;
 };
 
+const displayWeatherForecast = (weatherData) => {
+  const weekdays = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const temperatures = [];
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  // Recorremos la lista de predicciones del JSON
+  weatherData.list.forEach((entry) => {
+    const entryDate = new Date(entry.dt * 1000); // Convert dt to date Object
+
+    // Verificamos si la hora es 12:00
+    if (entryDate.getHours() === 12) {
+      const diffDays = Math.floor((entryDate - today) / (1000 * 60 * 60 * 24));
+
+      // Guardamos las temperaturas de hoy, mañana y pasado mañana
+      if (diffDays >= 0 && diffDays <= 4) {
+        temperatures.push({
+          day: weekdays[entryDate.getDay()],
+          temperature: entry.main.temp,
+        });
+
+        console.log(temperatures[0].day);
+        console.log(temperatures[0].temperature);
+      }
+    }
+  });
+
+
+  
+  todayPara.innerHTML = `Today: <strong>${parseInt(weatherData.list[0].main.temp)}°C</strong>`;
+
+  tomorrowPara.innerHTML = `${temperatures[0].day}: <strong> ${parseInt(
+    temperatures[0].temperature
+  )}°C</strong>`;
+  thirdTempPara.innerHTML = `${temperatures[1].day}: <strong> ${parseInt(
+    temperatures[1].temperature
+  )}°C</strong>`;
+};
+
 getWeatherAPI();
+
+getWeatherForecastAPI();

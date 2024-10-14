@@ -326,6 +326,11 @@ footer a:hover {
     color: #ffbeaa;
 }
 
+.social-media-container a>img {
+    margin: .5rem;
+}
+
+
 #lastModified {
     color: #d0d0d0;
     font-weight: bold;

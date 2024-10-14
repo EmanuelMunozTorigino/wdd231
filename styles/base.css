@@ -185,3 +185,12 @@ footer {
     font-weight: bold;
     font-size: large;
 }
+
+
+dialog {
+    padding: 1rem;
+}
+
+dialog::backdrop {
+    background-color:filter(blur);
+}
