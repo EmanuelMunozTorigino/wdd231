@@ -50,23 +50,32 @@
     }
 
 
-.heroimg-container {
-    width: 100%;
-}
-.hero-image-button {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translate(-50%, -50%);   
-    min-width: 200px;
-    height: 50px;
-}
-.hero-image-button:hover {
-    background: #fff;
-    color: #212529; 
-}
+    .heroimg-container {
+        width: 100%;
+    }
+    .hero-image-button {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);   
+        min-width: 200px;
+        height: 50px;
+    }
+    .hero-image-button:hover {
+        background: #fff;
+        color: #212529; 
+    }
 
     
+    /* Index Layout */
+
+    .info-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: .5rem;
+    }
+
+
 
     /* Directory layout..*/
     

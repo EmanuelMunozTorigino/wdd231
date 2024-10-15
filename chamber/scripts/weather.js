@@ -8,6 +8,10 @@ const sunset = document.createElement("p");
 
 const weatherContainer = document.getElementById("weatherContainer");
 
+const weatherForecastContainer = document.getElementById(
+  "weatherForecastContainer"
+);
+
 weatherContainer.append(humidity);
 weatherContainer.append(sunrise);
 weatherContainer.append(sunset);
@@ -17,9 +21,11 @@ const weatherURL =
 
 // Wheather Forecast 5 days 3 hours..
 
-const todayPara = document.getElementById("todayTemp");
+const forthDayTemp = document.getElementById("todayTemp");
+
 const tomorrowPara = document.getElementById("tomorrowTemp");
-const thirdTempPara = document.getElementById("thirdTemp");
+
+const thirdDayTemp = document.getElementById("thirdTemp");
 
 const weatherForecastURL =
   "https://api.openweathermap.org/data/2.5/forecast?lat=-33.89&lon=-60.57&units=metric&appid=1a8b3655e7f30981b5dc4994bae68c0c";
@@ -125,28 +131,62 @@ const displayWeatherForecast = (weatherData) => {
       const diffDays = Math.floor((entryDate - today) / (1000 * 60 * 60 * 24));
 
       // Guardamos las temperaturas de hoy, mañana y pasado mañana
-      if (diffDays >= 0 && diffDays <= 4) {
+      if (diffDays >= 0 && diffDays <= 2) {
         temperatures.push({
           day: weekdays[entryDate.getDay()],
           temperature: entry.main.temp,
+          weatherIcon: entry.weather[0].icon,
+          weatherDescription: entry.weather[0].description,
+          humidity: entry.main.humidity,
         });
-
-        console.log(temperatures[0].day);
-        console.log(temperatures[0].temperature);
       }
     }
   });
 
+  temperatures.forEach((weatherDay) => {
+    const weatherIconForecast = document.createElement("img");
+    const weatherFigureContainer = document.createElement("figure");
+    const weatherFigCaption = document.createElement("figcaption");
+    const tempPara = document.createElement("p");
+    const humidity = document.createElement("p");
+    const divContainer = document.createElement("div");
 
-  
-  todayPara.innerHTML = `Today: <strong>${parseInt(weatherData.list[0].main.temp)}°C</strong>`;
+    console.log(`Wheather day: ${weatherDay.day}`);
+    console.log(`Wheather description: ${weatherDay.weatherDescription}`);
 
+    tempPara.innerHTML = `<strong>${weatherDay.day}: ${parseInt(
+      weatherDay.temperature
+    )}°C`;
+    humidity.innerHTML = `Humidity: ${/*parseInt()*/ weatherDay.humidity}%`;
+
+    const weatherIcon = `https://openweathermap.org/img/wn/${weatherDay.weatherIcon}.png`;
+
+    let figCaption = weatherDay.weatherDescription;
+
+    weatherIconForecast.setAttribute("src", weatherIcon);
+    weatherIconForecast.setAttribute("alt", figCaption);
+    weatherFigCaption.innerHTML = figCaption;
+
+    weatherFigureContainer.appendChild(weatherIconForecast);
+    weatherFigureContainer.appendChild(weatherFigCaption);
+    divContainer.appendChild(tempPara);
+    divContainer.appendChild(weatherFigureContainer);
+    divContainer.appendChild(humidity);
+    weatherForecastContainer.appendChild(divContainer);
+  });
+  /*
   tomorrowPara.innerHTML = `${temperatures[0].day}: <strong> ${parseInt(
     temperatures[0].temperature
   )}°C</strong>`;
-  thirdTempPara.innerHTML = `${temperatures[1].day}: <strong> ${parseInt(
+  thirdDayTemp.innerHTML = `${temperatures[1].day}: <strong> ${parseInt(
     temperatures[1].temperature
   )}°C</strong>`;
+
+  forthDayTemp.innerHTML = `${temperatures[2].day}:<strong>${parseInt(
+    weatherData.list[0].main.temp
+  )}°C</strong>`;
+
+  */
 };
 
 getWeatherAPI();

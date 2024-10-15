@@ -112,6 +112,7 @@ nav.show {
 
     /* Home page ( Index) */
 
+
 .heroimg-container div {
     position: relative;
 }
@@ -172,22 +173,52 @@ nav.show {
 }
 
 
-.info-container {
-    background-color: rgb(156, 139, 139);
-    margin: 0 1rem;
-    border: 1px solid burlywood 
+/*  Event section   */
+
+.events-list {
+    padding: 1rem;
 }
 
 
 
+
+.flex {
+    display: flex;
+}
+
+#weatherContainer {
+    border-left: 2px solid beige;
+    padding-left: 1rem;
+}
 
 
 .info-container h2 {
+    background-color: rgba(255, 255, 255,.2);
+    margin: 0;
     text-align: center;
-    background-color: beige;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dark-mode .info-container h2 {
+    background-color: rgba(0, 0, 0,.2);
     color: teal;
 }
 
+.article-container {
+    text-align: center;
+    margin: .5rem;
+    background-color: rgb(101, 101, 25);
+    background-color: rgb(140, 175, 215);
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+
+
+.dark-mode .article-container {
+    background-color: #1C3D5A;
+}
 
 .business-container {
     margin: 1rem;
@@ -204,10 +235,31 @@ nav.show {
     align-items: center;
 }
 
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+    margin: 0 .5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+#weatherForecastContainer div {
+    border: 1px solid beige;
+    background-color: rgb(140, 175, 215);
+    border-radius: 20px;
+}
 
+.dark-mode #weatherForecastContainer div {
+    background-color: #1C3D5A;
+}
 
-
+.forecast-article-container{
+    text-align: center;
+    border-radius: 10px;
+}
 
     /* Directory page main layout*/ 
 
