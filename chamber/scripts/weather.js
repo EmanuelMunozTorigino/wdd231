@@ -131,7 +131,7 @@ const displayWeatherForecast = (weatherData) => {
       const diffDays = Math.floor((entryDate - today) / (1000 * 60 * 60 * 24));
 
       // Guardamos las temperaturas de hoy, mañana y pasado mañana
-      if (diffDays >= 0 && diffDays <= 2) {
+      if (diffDays >= 0 && diffDays <= 3) {
         temperatures.push({
           day: weekdays[entryDate.getDay()],
           temperature: entry.main.temp,
