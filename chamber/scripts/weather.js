@@ -151,9 +151,7 @@ const displayWeatherForecast = (weatherData) => {
     const humidity = document.createElement("p");
     const divContainer = document.createElement("div");
 
-    console.log(`Wheather day: ${weatherDay.day}`);
-    console.log(`Wheather description: ${weatherDay.weatherDescription}`);
-
+    
     tempPara.innerHTML = `<strong>${weatherDay.day}: ${parseInt(
       weatherDay.temperature
     )}°C`;

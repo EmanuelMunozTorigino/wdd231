@@ -64,5 +64,49 @@ gridbtn.addEventListener("click", () => {
 
 listbtn.addEventListener("click", () => {
   $companiesContainer.classList.add("list");
-  $companiesContainer.classList.remove("grid");
+  $companie
+  sContainer.classList.remove("grid");
 });
+
+/*
+
+const displayCompanies = (companiesList) => {
+  companies
+  List.forEach((company) => {
+    const $sectionContainer = document.createElement("section");
+
+    const $companyName = document.createElement("h2");
+
+    const $companyLogo = document.createElement("img");
+
+    const $addressPara = document.createElement("P");
+
+    const $phoneNumberPara = document.createElement("P");
+
+    const $websiteURL = document.createElement("a");
+
+    $companyName.innerHTML = company.name;
+
+    $companyLogo.setAttribute("src", company.logo);
+    $companyLogo.setAttribute("alt", `${company.name} Logo`);
+    $companyLogo.setAttribute("loading", "lazy");
+    $companyLogo.setAttribute("width", "200");
+
+    $websiteURL.setAttribute("href", company.websiteURL);
+    $websiteURL.setAttribute("target", "_blank");
+    $websiteURL.setAttribute("rel", "noopener noreferrer");
+    $websiteURL.innerHTML = company.websiteURL;
+
+    $addressPara.innerHTML = `Address: ${company.address}`;
+    $phoneNumberPara.innerHTML = `Phone: ${company.phoneNumber}`;
+
+    $sectionContainer.appendChild($companyName);
+    $sectionContainer.appendChild($companyLogo);
+    $sectionContainer.appendChild($addressPara);
+    $sectionContainer.appendChild($phoneNumberPara);
+    $sectionContainer.appendChild($websiteURL);
+
+    $companiesContainer.appendChild($sectionContainer);
+  });
+};
+*/
