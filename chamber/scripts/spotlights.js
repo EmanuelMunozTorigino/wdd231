@@ -32,6 +32,7 @@ const createSpotlight = (company) => {
   const $addressPara = document.createElement("P");
 
   const $phoneNumberPara = document.createElement("P");
+  const $membershipLevel = document.createElement("P");
 
   const $websiteURL = document.createElement("a");
 
@@ -48,21 +49,23 @@ const createSpotlight = (company) => {
   $websiteURL.setAttribute("rel", "noopener noreferrer");
   $websiteURL.innerHTML = company.websiteURL;
 
-  $addressPara.innerHTML = `Address: ${company.address}`;
-  $phoneNumberPara.innerHTML = `Phone: ${company.phoneNumber}`;
+  $addressPara.innerHTML = `<strong>Address:</strong> ${company.address}`;
+  $phoneNumberPara.innerHTML = `<strong>Phone:</strong> ${company.phoneNumber}`;
+
+  $membershipLevel.innerHTML = `<strong>Membership Level: ${company.membershipLevel}</strong>`;
 
   $sectionContainer.appendChild($companyName);
   $sectionContainer.appendChild($companyLogo);
   $sectionContainer.appendChild($addressPara);
   $sectionContainer.appendChild($phoneNumberPara);
   $sectionContainer.appendChild($websiteURL);
+  $sectionContainer.appendChild($membershipLevel);
 
   return $sectionContainer;
 };
 
 async function displaySpotlights() {
   const companiesData = await LoadData();
-  console.log(companiesData);
   const randomMembers = selectRandomMember(companiesData, 3);
   const $spotlightsContainer = document.getElementById("spotlights-container");
 

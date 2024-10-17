@@ -340,16 +340,6 @@ nav.show {
     align-items: center;
 }
 
-.grid-3-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    text-align: center;
-    margin: 0 .5rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 
 #weatherForecastContainer div {
     border: 1px solid beige;
@@ -573,13 +563,15 @@ nav.show {
     border-radius: 50%;
 }
 .membership-card button {
+    display: block;
+    text-align: center;
     background-color: #1C3D5A;
     color: white;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    margin: .5rem 0;
+    margin: .5rem auto;
     
 }
 .membership-card button:hover {
