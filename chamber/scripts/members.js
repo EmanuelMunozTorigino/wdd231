@@ -64,8 +64,7 @@ gridbtn.addEventListener("click", () => {
 
 listbtn.addEventListener("click", () => {
   $companiesContainer.classList.add("list");
-  $companie
-  sContainer.classList.remove("grid");
+  $companiesContainer.classList.remove("grid");
 });
 
 /*

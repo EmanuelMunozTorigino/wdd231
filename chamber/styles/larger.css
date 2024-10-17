@@ -78,7 +78,7 @@
 
 
     /* Directory layout..*/
-    
+
     
     .list section {
     display: grid;
@@ -92,6 +92,11 @@
     }
 
     
+/*      JOIN US LAYOUT */
 
+.join-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 }

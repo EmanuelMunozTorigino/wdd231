@@ -51,6 +51,7 @@
     <script src="scripts/hamburgerMenu.js" defer></script>
     <script src="scripts/darkMode.js" defer></script>
     <script src="scripts/navActiveEffect.js" defer></script>
+    <script src="scripts/timeStampForm.js" defer></script>
     
 </head>
 
@@ -74,10 +75,63 @@
     </header>
 
     <main>
+        <article class="join-us-grid">
+        <form method="GET" action="thanks.html" class="joinUsForm">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name* <input type="text" name="fname" autocomplete="given-name" title="Given Name" required></label>
+                <label>Last Name* <input type="text" name="lname" autocomplete="family-name" title="Family Name" required></label>                
+                <label>Email <input type="email" name="email" placeholder="user@gmail.com" autocomplete="email" required ></label>
+                <label>Phone <input type="tel" name="phone" placeholder="Enter a valid phone number; e.g. 2477-53****" autocomplete="tel" required ></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Business/Organization Info</legend>
+                <label>Business/Organization Name <input type="text" name="organization-name" title="Enter the Organization Name" autocomplete="organization" required></label>
+                <label>Organizational Title <input type="text" name="organization-title" pattern="[-a-zA-Z ]{7,}" title="organization-title"></label>
+                <label for="organization-description">Oranization Description</label>  <textarea id="organization-description" name="organization-description" title="Enter a description of the Organization"
+                ></textarea>   
+            </fieldset>
+            
+            <fieldset>
+                <legend>Membership</legend>
+                <div>Membership Level</div>
+                <label><input type="radio" name="Membership Level" value="non-profit">Non Profit</label>
+                <label><input type="radio" name="Membership Level" value="bronze">Bronze</label>
+                <label><input type="radio" name="Membership Level" value="silver">Silver</label>
+                <label><input type="radio" name="Membership Level" value="gold">Gold</label>
+            </fieldset>
 
+            <input type="hidden" id="timeStamp" name="timeStamp">
 
+            <input type="submit" value="Join the chamber of commerce">
+          </form>
 
+        <section class="membership-container">
+            <h2>Membership Levels</h2>
+          <div class="membership-card">
+              <h3>Non Profit Suscription</h3>
+              <img  src="images/non-profit.png"alt="Imagen del Paquete Non Profit">
+              <button id="infoButton">Get AdditionalInformation</button>
+          </div>
+          <div class="membership-card">
+              <h3>Bronze</h3>
+              <img src="images/bronze-medal.png"alt="Imagen del Paquete Non Profit">
+              <button id="infoButton">Get AdditionalInformation</button>
+          </div>
+          <div class="membership-card">
+              <h3>Silver</h3>
+              <img src="images/silver-medal.png"alt="Imagen del Paquete Non Profit">
+              <button id="infoButton">Get AdditionalInformation</button>
+          </div>
+          <div class="membership-card">
+              <h3>Gold</h3>
+              <img class="radius-circle" src="images/golden-medal.png"alt="Imagen del Paquete Non Profit">
+              <button id="infoButton">Get AdditionalInformation</button>
+          </div>
 
+        </section>
+    </article>
 
 
     </main>
