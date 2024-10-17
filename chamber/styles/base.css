@@ -86,7 +86,7 @@ nav.show {
 
 
 .nav-link.active {
-    color: #5599f4;
+    color: #66a7ff;
     border-bottom: 1px solid;
 }
 
@@ -196,7 +196,10 @@ nav.show {
 .events-list {
     padding: 1rem;
 }
+.events-list a {
+    color: #00007e;
 
+}
 
 
 
@@ -341,6 +344,13 @@ nav.show {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0 1rem;
 }
 
 
@@ -636,8 +646,14 @@ main .dark-mode section a{
 
 .dark-mode a {
     color: #68c2ff;
-
 }
+
+.dark-mode .active {
+    color: white;
+} 
+.dark-mode .nav-link:hover {
+    color: white;
+} 
 
 /*
 .dark-mode a:hover {
