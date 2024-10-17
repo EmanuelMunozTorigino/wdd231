@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+h1,h2,h3 {
+    text-align: center;
+}
 
 /* Header Layout */
 
@@ -384,15 +387,9 @@ nav.show {
     width: 20px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
-    grid-gap: .5rem;
-    margin: 1rem;
-}
 
 .grid section {
-    margin: 0 auto;
+    margin: .5rem;
     text-align: center;
     min-width: 300px;
     padding: 1rem;
@@ -414,8 +411,8 @@ nav.show {
 }
 
 
-.grid section h2 {
-    display: none;
+.grid .showName {
+    display: block;
 }
 
 

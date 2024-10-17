@@ -131,7 +131,7 @@ const displayWeatherForecast = (weatherData) => {
       const diffDays = Math.floor((entryDate - today) / (1000 * 60 * 60 * 24));
 
       // Guardamos las temperaturas de hoy, mañana y pasado mañana
-      if (diffDays >= 0 && diffDays <= 3) {
+      if (diffDays >= 0 && diffDays <= 2) {
         temperatures.push({
           day: weekdays[entryDate.getDay()],
           temperature: entry.main.temp,
@@ -172,19 +172,6 @@ const displayWeatherForecast = (weatherData) => {
     divContainer.appendChild(humidity);
     weatherForecastContainer.appendChild(divContainer);
   });
-  /*
-  tomorrowPara.innerHTML = `${temperatures[0].day}: <strong> ${parseInt(
-    temperatures[0].temperature
-  )}°C</strong>`;
-  thirdDayTemp.innerHTML = `${temperatures[1].day}: <strong> ${parseInt(
-    temperatures[1].temperature
-  )}°C</strong>`;
-
-  forthDayTemp.innerHTML = `${temperatures[2].day}:<strong>${parseInt(
-    weatherData.list[0].main.temp
-  )}°C</strong>`;
-
-  */
 };
 
 getWeatherAPI();

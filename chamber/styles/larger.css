@@ -80,9 +80,16 @@
     /* Directory layout..*/
 
     
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+        grid-gap: .5rem;
+        margin: 1rem;
+}
+    
     .list section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     footer {
