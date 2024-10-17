@@ -161,7 +161,6 @@ nav.show {
     transform: translate(-50%, -50%);   
     min-width: 130px;
     height: 40px;
-    color: #fff;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -169,13 +168,24 @@ nav.show {
     display: inline-block;
     outline: none;
     border-radius: 20px;
+    color: #fff;
     border: 2px solid #212529;
     background: #212529;
 }
-.hero-image-button:hover {
-    background: #fff;
-    color: #212529; 
+
+
+.hero-image-button a {
+    text-decoration: none;
+    color: inherit;
+
 }
+
+
+.hero-image-button:hover {
+    background-color: #fff;
+    color: #212529;
+}
+
 
 
 /*  Event section   */
@@ -634,10 +644,13 @@ main .dark-mode section a{
 
 }
 
+/*
 .dark-mode a:hover {
     color: #d1dbe8;
     color: white;
 }
+*/
+
 
 .dark-mode .nav-list {
     background-color: #1e1e1e ;
