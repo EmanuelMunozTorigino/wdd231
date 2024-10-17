@@ -21,12 +21,6 @@ const weatherURL =
 
 // Wheather Forecast 5 days 3 hours..
 
-const forthDayTemp = document.getElementById("todayTemp");
-
-const tomorrowPara = document.getElementById("tomorrowTemp");
-
-const thirdDayTemp = document.getElementById("thirdTemp");
-
 const weatherForecastURL =
   "https://api.openweathermap.org/data/2.5/forecast?lat=-33.89&lon=-60.57&units=metric&appid=1a8b3655e7f30981b5dc4994bae68c0c";
 

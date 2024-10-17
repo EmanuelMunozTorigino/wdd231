@@ -177,7 +177,10 @@ nav.show {
 .hero-image-button a {
     text-decoration: none;
     color: inherit;
-
+    display: block;
+    border-radius: 20px;
+    margin: -11px;
+    padding: 10px;
 }
 
 
@@ -564,7 +567,6 @@ nav.show {
 }
 .membership-card button {
     display: block;
-    text-align: center;
     background-color: #1C3D5A;
     color: white;
     border: none;
