@@ -41,11 +41,12 @@
     <!--Scripts.. -->
     <script src="scripts/hamburgerMenu.js" defer></script>
     <script src="scripts/navActiveEffect.js" defer></script>
-    <script src="scripts/courseArray.js" defer></script>
     <script src="scripts/getDates.js"  defer></script>
+    <script src="scripts/courseArray.js" type="module" defer></script>
+    <script type="module" src="scripts/courseModal.js" defer></script>
 </head> 
 <body>
-
+    <dialog id="course-details"></dialog>
     <header>
         <a id="menu" href="#"></a>
         <img src="images/profilePhoto.jpg" alt="Profile photo - Emanuel Muñoz" width="100" height="118">
@@ -86,13 +87,11 @@
         <section class="section-container-III">
             <h2 class="section-heading">Web and Computer Programming Certificate</h2>            
             <div id="course-name-container" class="course-container">
-                    
                 <p>Select just the courses that you want to see filtering them</p>
-                <div id="filtered"></div>
-                
-                
+                <div id="filtered"></div>                
             </div>
         </section>
+
     </main>
 
     <footer>
