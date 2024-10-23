@@ -51,8 +51,8 @@
     <script src="scripts/hamburgerMenu.js" defer></script>
     <script src="scripts/darkMode.js" defer></script>
     <script src="scripts/navActiveEffect.js" defer></script>
-    <script src="scripts/timeStampForm.js" defer></script>
-    
+    <script src="scripts/membershipModals.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
 </head>
 
 <body>
@@ -76,7 +76,7 @@
 
     <main>
         <article class="join-us-grid">
-        <form method="GET" action="thanks.html" class="joinUsForm">
+        <form method="GET" action="thankyou.html" class="joinUsForm" id="joinUsForm">
             <fieldset>
                 <legend>Applicant Information</legend>
                 <label>First Name* <input type="text" name="fname" autocomplete="given-name" title="Given Name" required></label>
@@ -89,20 +89,20 @@
                 <legend>Business/Organization Info</legend>
                 <label>Business/Organization Name <input type="text" name="organization-name" title="Enter the Organization Name" autocomplete="organization" required></label>
                 <label>Organizational Title <input type="text" name="organization-title" pattern="[-a-zA-Z ]{7,}" title="organization-title"></label>
-                <label for="organization-description">Oranization Description</label>  <textarea id="organization-description" name="organization-description" title="Enter a description of the Organization"
+                <label for="organization-description">Organization Description</label>  <textarea id="organization-description" name="organization-description" title="Enter a description of the Organization"
                 ></textarea>   
             </fieldset>
             
             <fieldset>
                 <legend>Membership</legend>
                 <div>Membership Level</div>
-                <label><input type="radio" name="Membership Level" value="non-profit">Non Profit</label>
-                <label><input type="radio" name="Membership Level" value="bronze">Bronze</label>
-                <label><input type="radio" name="Membership Level" value="silver">Silver</label>
-                <label><input type="radio" name="Membership Level" value="gold">Gold</label>
+                <label><input type="radio" name="membership-level" value="non-profit">Non Profit</label>
+                <label><input type="radio" name="membership-level" value="bronze">Bronze</label>
+                <label><input type="radio" name="membership-level" value="silver">Silver</label>
+                <label><input type="radio" name="membership-level" value="gold">Gold</label>
             </fieldset>
 
-            <input type="hidden" id="timeStamp" name="timeStamp">
+            <input type="hidden" id="timestamp" name="timestamp">
 
             <input type="submit" value="Join the chamber of commerce">
           </form>
@@ -112,46 +112,53 @@
           <div class="membership-card">
               <h3>Non Profit Suscription</h3>
               <img  src="images/non-profit.png"alt="Imagen del Paquete Non Profit">
-              <button id="infoButton">See the benefits</button>
+              <button id="nonProfitButton">See the benefits</button>
           </div>
           <div class="membership-card">
               <h3>Bronze</h3>
               <img src="images/bronze-medal.png"alt="Imagen del Paquete Non Profit">
-              <button id="infoButton">See the benefits</button>
+              <button id="bronzeButton">See the benefits</button>
           </div>
           <div class="membership-card">
               <h3>Silver</h3>
               <img src="images/silver-medal.png"alt="Imagen del Paquete Non Profit">
-              <button id="infoButton">See the benefits</button>
+              <button id="silverButton">See the benefits</button>
           </div>
           <div class="membership-card">
               <h3>Gold</h3>
               <img class="radius-circle" src="images/golden-medal.png"alt="Imagen del Paquete Non Profit">
-              <button id="infoButton">See the benefits</button>
+              <button id="goldButton">See the benefits</button>
           </div>
 
+          <dialog id="membershipDialog">
+            <div class="membership-dialog-header">
+                <h2 id="membershipHeader"></h2>
+                <button id="closeButton">X</button>
+            </div>
+            <div id="membershipInfo"></div>
+          </dialog>
         </section>
     </article>
 
 
     </main>
 
-    <footer >
+    <footer>
 
         <section>
             <strong>Pergamino Business Network</strong>
-            <p>Address</p>
-            <p>Place</p>
+            <p>11 de septiembre 698</p>
+            <p>Pergamino, Buenos Aires, Argentina</p>
             <p>info@pergaminobn.org</p>
             <p>(223) 555-2300</p>
         </section>
         
         <section class="social-media-container">
-            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/youtube-logo.png" alt="Youtube Logo"></a>
+            <a href="https://www.instagram.com/ema_douglas/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" alt="Instagram Logo" width="32" height="32"></a>
             
-            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/x-logo.png" alt="X-Twitter Logo"></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="images/youtube-logo.png" alt="X-Twitter Logo" width="32" height="32"></a>
             
-            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-logo.png" alt="LinkedIn Logo"></a>
+            <a href="https://www.linkedin.com/in/emanuelmunoztorigino/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-logo.png" alt="LinkedIn Logo" width="32" height="32"></a>
         </section>
         
         <section>

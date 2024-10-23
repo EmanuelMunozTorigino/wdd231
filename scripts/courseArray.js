@@ -156,11 +156,9 @@ const courseURL =
 
 courseURL.textContent = "Web and Computer Programming";
 
-creditsContainer.innerHTML = `The total number of credits to The Certificate '<strong><a class="course-link" href="${courseURL}" target="_blank" rel="noopener noreferrer">Web and Computer Programming</a></strong>' is <strong>${totalCredits}</strong>`;
+creditsContainer.innerHTML = `The total number of credits to The Certificate '<strong><a class="course-link" href="${courseURL}" target="_blank" rel="noopener noreferrer">Web and Computer Programming</a></strong>' is <strong>${totalCredits}</strong>\n *Gray color represent completed courses`;
 
 $mainContainer.appendChild(creditsContainer);
-
-console.log(creditsContainer.getElementsByClassName("a"));
 
 /*
 creditsContainer.getElementsByTagName("a").classList.add(".nav-link");
@@ -175,3 +173,46 @@ Array.from(dynamicButtons).forEach((button) => {
     filterCourses(courses, button);
   });
 });
+
+/*_______________________________________________________________________*/
+
+/*
+
+
+const modal = document.getElementById("course-details");
+const openButton = document.querySelector(".open-modal-btn");
+const closeButton = document.querySelector(".close-modal-btn");
+
+const displayCourseDetails = (course) => {
+  modal.innerHTML = "";
+  modal.innerHTML = `
+  <button id="close-modal-btn">X</button>
+  <h2>${course.subject}</h2>
+  <h3>${course.title}</h3>
+  <p><strong>credits:</strong> ${course.credits}</p>
+  <p><strong>Certificate:</strong> ${course.certificate}</p>
+  <p><strong>Technology:</strong> ~${course.technology.join(", ")}~ </p>
+  <p>${course.description}</p>
+  `;
+
+  modal.showModal();
+
+  closeButton.addEventListener("click", () => {
+    modal.close();
+  });
+};
+
+console.log($mainContainer);
+
+const coursesbtn = $mainContainer.getElementsByTagName("h3");
+console.log(coursesbtn);
+
+Array.from(coursesbtn).forEach((course) => {
+  console.log(course);
+  course.addEventListener("click", () => {
+    displayCourseDetails(course);
+  });
+
+  
+  });
+*/
