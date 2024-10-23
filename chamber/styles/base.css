@@ -472,7 +472,7 @@ nav.show {
 }
 
 .joinUsForm legend{ 
-    color: #445ba9;
+    color: #3f549c;
     padding: 0 .5rem;
 }
 .joinUsForm label {
@@ -483,7 +483,7 @@ nav.show {
 } 
 .joinUsForm div { 
     padding-top: 1rem;
-    color: #445ba9;
+    color: #3f549c;
     font-size: .9rem;
 }
 .joinUsForm textarea {
@@ -664,7 +664,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #ffbeaa;
+    color: #9EF9F5;
 }
 
 .social-media-container a>img {
