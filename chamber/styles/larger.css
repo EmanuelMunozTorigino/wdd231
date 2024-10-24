@@ -112,6 +112,18 @@
 .join-us-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    }
+    
+/*      DISCOVER LAYOUT */
+
+.main-discover-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+.images-container-discover img {
+    max-width: 600px;
 }
 
 }
