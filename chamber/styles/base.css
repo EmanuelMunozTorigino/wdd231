@@ -707,6 +707,13 @@ nav.show {
     padding: .5rem 1rem;
     background-color: rgba(0, 0, 0, 0.3);
 }
+.aside-discover-page span{ 
+    display: block;
+    color:#4f4130;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
 
 
 
@@ -770,27 +777,6 @@ nav.show {
 
 
 
-.images-container-discover img:nth-of-type(even) { 
-    transition: width 2s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 19);
-    box-shadow: 10px 10px 10px black;
-    
-}
-
-
-.images-container-discover img:nth-of-type(even):hover { 
-    width: 60%;
-}
-
-.images-container-discover img:nth-of-type(odd) {
-    transition: transform 2s, opacity 1s;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .6), 0 6px 20px 0 rgba(0, 0, 0, .6);
-}
-
-.images-container-discover img:nth-of-type(odd):hover { 
-    transform: translateX(20px);
-    opacity: .9;
-}
 
 
 /*_____________    Footer         ____________ */

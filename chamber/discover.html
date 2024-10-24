@@ -53,7 +53,9 @@
     <script src="scripts/darkMode.js" defer></script>
     <script src="scripts/navActiveEffect.js" defer></script>
     <script src="scripts/calendar.js" defer></script>
+    <script src="scripts/lastUserVisit.js" defer></script>
 </head>
+
 
 <body>
     <header>
@@ -63,7 +65,7 @@
             <a id="menu" href="#"></a>
             <img id="darkMode" src="images/dark.png" alt="Dark Mode Logo">
         </div>
-
+        
         <nav id="animateNav">
             <ul class="nav-list">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -73,12 +75,13 @@
             </ul>
         </nav>
     </header>
-
+    
     <main class="main-discover-page">
         <aside class="aside-discover-page">
+            <span id="lastVisitMessage"></span>
             <h2>Local Information</h2>
             <ul>
-              <li>Demographics: 45 million inhabitants</li>
+                <li>Demographics: 45 million inhabitants</li>
               <li>Currency: Argentine Peso (ARS)</li>
               <li>Main attractions:</li>
               <ul>
