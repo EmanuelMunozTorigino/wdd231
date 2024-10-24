@@ -676,7 +676,7 @@ nav.show {
 }
 
 .aside-discover-page ul {
-    background-color: burlywood;
+    background-color: rgba(222, 184, 135,.4);
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
 }
