@@ -126,4 +126,10 @@
     max-width: 600px;
 }
 
+
+@keyframes upperMove {
+    from {left: 600px}
+    to {left: 0px}
+}
+
 }
