@@ -1,0 +1,72 @@
+[
+    {
+      "company_name": "Solar Solutions Inc.",
+      "email": "contact@solarsolutions.com",
+      "phone_number": "+54 9 11 1234 5678",
+      "website": "https://solarsolutions.com",
+      "location": "Buenos Aires, Argentina"
+    },
+    {
+      "company_name": "EcoEnergy",
+      "email": "info@ecoenergy.com",
+      "phone_number": "+54 9 11 9876 5432",
+      "website": "https://ecoenergy.com",
+      "location": "Rosario, Argentina"
+    },
+    {
+      "company_name": "SolarTech Services",
+      "email": "support@solartech.com",
+      "phone_number": "+54 9 381 4321 8765",
+      "website": "https://solartech.com",
+      "location": "Córdoba, Argentina"
+    },
+    {
+      "company_name": "GreenSun Installations",
+      "email": "sales@greensun.com",
+      "phone_number": "+54 9 261 5678 1234",
+      "website": "https://greensun.com",
+      "location": "Mendoza, Argentina"
+    },
+    {
+      "company_name": "EnerSys Solar",
+      "email": "contact@enersys.com",
+      "phone_number": "+54 9 221 8765 4321",
+      "website": "https://enersys.com",
+      "location": "La Plata, Argentina"
+    },
+    {
+      "company_name": "SolarWorld Argentina",
+      "email": "hello@solarworld.com",
+      "phone_number": "+54 9 11 2345 6789",
+      "website": "https://solarworld.com",
+      "location": "Buenos Aires, Argentina"
+    },
+    {
+      "company_name": "Sunrise Energy Solutions",
+      "email": "info@sunrise.com",
+      "phone_number": "+54 9 351 6543 2109",
+      "website": "https://sunrise.com",
+      "location": "Córdoba, Argentina"
+    },
+    {
+      "company_name": "SolarMax Installations",
+      "email": "contact@solarmax.com",
+      "phone_number": "+54 9 261 7890 1234",
+      "website": null,
+      "location": "Mendoza, Argentina"
+    },
+    {
+      "company_name": "Juan Torres Solar Services",
+      "email": "juantorres@gmail.com",
+      "phone_number": "+54 9 387 4321 0987",
+      "website": null,
+      "location": "Salta, Argentina"
+    },
+    {
+      "company_name": "EnergyPros Argentina",
+      "email": "info@energypros.com",
+      "phone_number": "+54 9 223 3456 7890",
+      "website": "https://energypros.com",
+      "location": "Mar del Plata, Argentina"
+    }
+  ]

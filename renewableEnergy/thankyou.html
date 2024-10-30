@@ -1,0 +1,57 @@
+<!-- calculator.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Savings Calculator</title>
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamburgerMenu.js" defer></script>
+    <script src="scripts/navActiveEffect.js" defer></script>
+    <script src="scripts/calculateSaving.js" defer></script>
+    <script src="scripts/formGetData.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container" >
+            <img src="images/logo.png" alt="" width="44" height="44">
+            <p>Solar Synergy</p>
+            <a id="menu" href="#"></a>
+        </div>
+        <nav id="animateNav">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link active" href="calculator.html">Calculator</a></li>
+                <li><a class="nav-link" href="providers.html">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <h1>Verification of complete Form</h1>
+    
+        <div id="results" class="form-results"></div>
+
+    </main>
+    
+    <footer>
+        <section>
+            <p>Emanuel Muñoz Torigino | <a href="https://www.byupathway.edu/" target="_blank" rel="noopener noreferrer">Pathway-Connect</a> @BYU-Idaho</p>
+            <a href="attributions.html">Attributions</a> | <a href="site-plan.html">site plan</a>
+        </section>
+        <section>
+        <strong><p>&copy;<span id="currentYear"></span> Solar Synergy. All rights reserved.</p></strong>
+            <p>The future is right there | WDD-231</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+</html>

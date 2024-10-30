@@ -1,0 +1,342 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 1); /* Semi-transparent background */ 
+    box-shadow: 2px 2px 1px black;
+    border-bottom: 1px solid;
+    margin-bottom: 2px;
+}
+
+.logo-container {
+    margin: .5rem;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 2px solid #1C3D5A;
+    border-radius: 25px;
+}
+
+.logo-container p {
+    color: #1C3D5A;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .1rem;
+    margin-left: .5rem;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.8s ease-out;
+}
+
+
+nav.show {
+    grid-template-rows: 1fr;
+}
+
+
+#animateNav ul {
+    width: 100%;
+    margin: 0;
+    margin-top: .5rem;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+	font-size: 3rem;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+#menu::before {
+    content: "=";
+}
+
+#menu.show::before {
+    content: "\2718";
+    font-size: 35px;
+    padding-right: 4px;
+}
+
+.nav-link {
+    display: block;   
+    background-color: #0f2f8fbb;
+    background-color: #1C3D5A;
+    padding: .7rem;
+    margin-right: 0 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: larger;
+}
+.nav-link:hover {   
+    background-color: #ffffff;
+    color: #1C3D5A;
+}
+
+.nav-link.active {   
+    background-color: #ffffff;
+    color: #1C3D5A;
+}
+
+/* --------  HOME PAGE LAYOUT -----------*/
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-msg {
+    text-align: center;
+}
+
+.hero-msg h1{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 1em;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.cta button a {
+    padding: 7px 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #1C3D5A;
+    font-weight: 600;
+}
+.cta button a:hover {
+    color: #ffffff;
+    background-color: #1C3D5A;
+
+}
+.news {
+    margin: 20px;
+}
+
+
+/* ----------- Calculator Layout -----------------*/
+
+.saving-form fieldset{
+    margin: 2rem 2%;
+    border: 1px solid #ddd;
+    padding: .5rem 2%; 
+}
+
+.saving-form legend{ 
+    color: #3f549c;
+    padding: 0 .5rem;
+}
+.saving-form label {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+} 
+.saving-form div { 
+    padding-top: 1rem;
+    color: #3f549c;
+    font-size: .9rem;
+}
+
+.saving-form textarea {
+    display: block;
+    background-color: #eee;
+    border: solid 1px #999;
+    border-radius: 6px;
+    color: #555;
+    width: 100%;
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    max-width: 400px;
+    appearance: none;
+}
+
+.saving-form input[type="text"],
+.saving-form input[type="number"],
+.saving-form input[type="email"],
+.saving-form input[type="tel"]
+{
+    display: block;
+    background-color: deeppink;
+    background-color: #eee;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+select {
+    display: block;
+    background-color: deeppink;
+    background-color: #eee;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.form-button {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e); 
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 0 2rem 4%;
+}
+
+.saving-form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e); 
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 0 2rem 4%;
+}
+
+.saving-form input:required {
+    /*background-color: red;*/
+
+/*    border: solid 2px red;*/
+    border-right: solid 8px rgb(184, 6, 6);
+}
+
+
+.saving-form input:required:valid {
+    border-right: solid 8px green;
+}
+
+
+.calculator-heading {
+    text-align: center;
+}
+
+
+/*  ----------  THANKYOU LAYOUT ------------    */
+
+.form-results {
+    background-color: beige;
+    border: 1px solid burlywood;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 1rem auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.form-results li{
+    padding: .3rem;
+    margin: 0 auto;
+}
+
+
+/* --------  PROVIDERS LAYOUT   -------------*/
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+  
+.card {
+  background-color: #fff;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+  
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  background-color: #1C3D5A;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.card a {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #1C3D5A;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+background: #1C3D5A;
+color: #cdcdcd;
+text-align: center;
+padding: 10px 0;
+}
+footer a{
+    color: #ffffff;
+    
+}

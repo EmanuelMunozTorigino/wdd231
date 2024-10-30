@@ -1,0 +1,41 @@
+@media screen and (min-width: 600px) {
+ 
+    .header {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    }
+    
+    #animateNav ul {
+        display: flex;
+        margin: 0;
+        gap: 1.5rem;
+    }
+    
+    nav {
+        grid-template-rows: 1fr;
+    }
+    
+    main {
+        padding-top: 6rem;
+    }
+
+
+    .hero-img {
+        margin-top: -2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+ 
+    
+    /*   ------------- CALCULATOR LAYOUT   -----------------*/
+
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
