@@ -117,22 +117,8 @@ function displayCourseDetails(course) {
       courseDialog.close();
     }
   });
+};
 
-  /*
-  
-  window.onclick = function (event) {
-    if (event.target == courseDialog) {
-      courseDialog.close();
-    }
-  };
-`  */
-`}
-
-/*
- */
-/*
-creditsContainer.getElementsByTagName("a").classList.add(".nav-link");
-*/
 
 displayCourses(courses);
 
