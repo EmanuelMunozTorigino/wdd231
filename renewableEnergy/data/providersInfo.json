@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": ,
       "company_name": "Solar Solutions Inc.",
       "description": "Our mission is to accelerate the transition to sustainable energy through affordable solar panel installations.",
       "email": "contact@solarsolutions.com",
@@ -10,9 +10,9 @@
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/buenos-aires.webp"
     },
     {
-      "id": 2,
+      "id": 1,
       "company_name": "EcoEnergy",
-      "description": "We aim to empower homeowners and businesses by providing innovative solar solutions that reduce energy bills and carbon footprints.",
+      "description": "We aim to empower homeowner and businesse by providing innovative solar solutions to reduce energy bill and carbon footprint.",
       "email": "info@ecoenergy.com",
       "phone_number": "+54 9 11 9876 5432",
       "website": "https://ecoenergy.com",
@@ -20,7 +20,7 @@
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/rosario.webp"
     },
     {
-      "id": 3,
+      "id": 2,
       "company_name": "SolarTech Services",
       "description": "Our goal is to deliver reliable solar systems that ensure energy independence and long-term sustainability.",
       "email": "support@solartech.com",
@@ -30,7 +30,7 @@
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/cordoba.webp"
     },
     {
-      "id": 4,
+      "id": 3,
       "company_name": "GreenSun Installations",
       "description": "GreenSun Installations mission is to guide communities toward a greener future with customized solar energy solutions.",
       "email": "sales@greensun.com",
@@ -40,7 +40,7 @@
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/mendoza.webp"
     },
     {
-      "id": 5,
+      "id": 4,
       "company_name": "EnerSys Solar",
       "description": "We strive to make solar energy accessible to everyone by offering flexible installation services and top-tier maintenance.",
       "email": "contact@enersys.com",
@@ -50,7 +50,7 @@
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/la-plata.webp"
     },
     {
-      "id": 6,
+      "id": 5,
       "company_name": "SolarWorld Argentina",
       "description": "Our mission is to modernize power grids by integrating solar technologies, ensuring a resilient and eco-friendly energy supply.",
       "email": "hello@solarworld.com",
@@ -60,7 +60,7 @@
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/buenos-aires-1.webp"
     },
     {
-      "id": 7,
+      "id": 6,
       "company_name": "Sunrise Energy Solutions",
       "description": "We provide expert advice and installation services to help clients harness the power of the sun efficiently and cost-effectively.",
       "email": "info@sunrise.com",
@@ -70,7 +70,7 @@
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/cordoba-1.webp"
     },
     {
-      "id": 8,
+      "id": 7,
       "company_name": "SolarMax Installations",
       "description": "SolarMax is dedicated to creating smart solar solutions that align with modern lifestyles and environmental values.",
       "email": "contact@solarmax.com",
@@ -80,7 +80,7 @@
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/mendoza-1.webp"
     },
     {
-      "id": 9,
+      "id": 8,
       "company_name": "Juan Torres Solar Services",
       "description": "goal is to provide high-efficiency solar systems that maximize energy production, even in challenging environments.",
       "email": "juantorres@gmail.com",
@@ -90,8 +90,9 @@
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/salta.webp"
     },
     {
-      "id": 10,
+      "id": 9,
       "company_name": "EnergyPros Argentina",
+      "description": "Brighten lives by making solar energy simple, affordable, and accessible for all.",
       "email": "info@energypros.com",
       "phone_number": "+54 9 223 3456 7890",
       "website": "https://energypros.com",

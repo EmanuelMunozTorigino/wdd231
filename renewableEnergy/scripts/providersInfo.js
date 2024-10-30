@@ -28,7 +28,7 @@ const displayProviders = (providersList) => {
 
     providerInfoContainer.innerHTML = `<h2>${provider.company_name}</h2>
     <p>${provider.description}</p>
-    <button id=${id}>Contact Info</button>`;
+    <div class="provider-button-container"><button class="provider-info-button">Contact Info</button></div>`;
     providerCard.appendChild(providerInfoContainer);
     $providersContainer.appendChild(providerCard);
     id++;
