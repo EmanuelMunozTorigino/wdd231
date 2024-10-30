@@ -2,81 +2,101 @@
     {
       "id": 1,
       "company_name": "Solar Solutions Inc.",
+      "description": "Our mission is to accelerate the transition to sustainable energy through affordable solar panel installations.",
       "email": "contact@solarsolutions.com",
       "phone_number": "+54 9 11 1234 5678",
       "website": "https://solarsolutions.com",
-      "location": "Buenos Aires, Argentina"
+      "location": "Buenos Aires, Argentina",
+      "url": "../images/buenos-aires.webp"
     },
     {
       "id": 2,
       "company_name": "EcoEnergy",
+      "description": "We aim to empower homeowners and businesses by providing innovative solar solutions that reduce energy bills and carbon footprints.",
       "email": "info@ecoenergy.com",
       "phone_number": "+54 9 11 9876 5432",
       "website": "https://ecoenergy.com",
-      "location": "Rosario, Argentina"
+      "location": "Rosario, Argentina",
+      "url": "../images/rosario.webp"
     },
     {
       "id": 3,
       "company_name": "SolarTech Services",
+      "description": "Our goal is to deliver reliable solar systems that ensure energy independence and long-term sustainability.",
       "email": "support@solartech.com",
       "phone_number": "+54 9 381 4321 8765",
       "website": "https://solartech.com",
-      "location": "Córdoba, Argentina"
+      "location": "Córdoba, Argentina",
+      "url": "../images/cordoba.webp"
     },
     {
       "id": 4,
       "company_name": "GreenSun Installations",
+      "description": "GreenSun Installations mission is to guide communities toward a greener future with customized solar energy solutions.",
       "email": "sales@greensun.com",
       "phone_number": "+54 9 261 5678 1234",
       "website": "https://greensun.com",
-      "location": "Mendoza, Argentina"
+      "location": "Mendoza, Argentina",
+      "url": "../images/mendoza.webp"
     },
     {
       "id": 5,
       "company_name": "EnerSys Solar",
+      "description": "We strive to make solar energy accessible to everyone by offering flexible installation services and top-tier maintenance.",
       "email": "contact@enersys.com",
       "phone_number": "+54 9 221 8765 4321",
       "website": "https://enersys.com",
-      "location": "La Plata, Argentina"
+      "location": "La Plata, Argentina",
+      "url": "../images/la-plata.webp"
     },
     {
       "id": 6,
       "company_name": "SolarWorld Argentina",
+      "description": "Our mission is to modernize power grids by integrating solar technologies, ensuring a resilient and eco-friendly energy supply.",
       "email": "hello@solarworld.com",
       "phone_number": "+54 9 11 2345 6789",
       "website": "https://solarworld.com",
-      "location": "Buenos Aires, Argentina"
+      "location": "Buenos Aires, Argentina",
+      "url": "../images/buenos-aires-1.webp"
     },
     {
       "id": 7,
       "company_name": "Sunrise Energy Solutions",
+      "description": "We provide expert advice and installation services to help clients harness the power of the sun efficiently and cost-effectively.",
       "email": "info@sunrise.com",
       "phone_number": "+54 9 351 6543 2109",
       "website": "https://sunrise.com",
-      "location": "Córdoba, Argentina"
+      "location": "Córdoba, Argentina",
+      "url": "../images/cordoba-1.webp"
     },
     {
       "id": 8,
       "company_name": "SolarMax Installations",
+      "description": "SolarMax is dedicated to creating smart solar solutions that align with modern lifestyles and environmental values.",
       "email": "contact@solarmax.com",
       "phone_number": "+54 9 261 7890 1234",
       "website": null,
-      "location": "Mendoza, Argentina"
+      "location": "Mendoza, Argentina",
+      "url": "../images/mendoza-1.webp"
     },
     {
       "id": 9,
       "company_name": "Juan Torres Solar Services",
+      "description": "My goal is to provide high-efficiency solar systems that maximize energy production, even in challenging environments.",
       "email": "juantorres@gmail.com",
       "phone_number": "+54 9 387 4321 0987",
       "website": null,
-      "location": "Salta, Argentina"
+      "location": "Salta, Argentina",
+      "url": "../images/salta.webp"
     },
     {
       "id": 10,
       "company_name": "EnergyPros Argentina",
+      "description": "Our mission is to brighten lives by making solar energy simple, affordable, and accessible for all.",
       "email": "info@energypros.com",
       "phone_number": "+54 9 223 3456 7890",
       "website": "https://energypros.com",
-      "location": "Mar del Plata, Argentina"
+      "location": "Mar del Plata, Argentina",
+      "url": "../images/mar-del-plata.webp"
     }
   ]
