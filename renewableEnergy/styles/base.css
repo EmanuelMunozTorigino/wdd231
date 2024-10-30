@@ -337,7 +337,6 @@ transform: scale(1.05);
 }
 
 
-
 .provider-info-button {
     border: none;
     cursor: pointer;
@@ -355,43 +354,31 @@ transform: scale(1.05);
     color: #1C3D5A;
 }
 
+.provider-modal {
+    border-radius: .50rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  ::backdrop {
+    background-color: rgba(0, 0, 0,.4);
+    filter: blur(10px);
+  }
+  
+.provider-modal button {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
 
 
 
-/*
-
-.card-header {
-  background-color: #1C3D5A;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-.card-content {
-  padding: 15px;
-}
-
-.card-content p {
-  margin: 5px 0;
-  color: #333;
-}
-
-.card-providers a {
-  display: block;
-  margin-top: 10px;
-  text-align: center;
-  text-decoration: none;
-  color: #1C3D5A;
-  font-weight: bold;
-}
-
-.card-providers a:hover {
-  text-decoration: underline;
-}
-
-*/
-
+/* -------------- FOOTER   --------------------------  */
 
 footer {
 background: #1C3D5A;

@@ -7,60 +7,72 @@ const url =
 
 const providersList = await LoadData(url);
 
+const providerModal = document.getElementById("provider-contact-info");
+
+const displayContactInfo = (provider) => {
+  providerModal.innerHTML = "";
+  providerModal.innerHTML = `
+    <button id="closeModal">X</button>
+    <h2>${provider.company_name}</h2>
+    <p><strong>Phone Number</strong>: ${provider.phone_number}</p>
+    <p><strong>Email</strong>: ${provider.email}</p>
+    <a><strong>Website</strong>: ${provider.website}</a>
+    `;
+  providerModal.showModal();
+
+  closeModal.addEventListener("click", () => {
+    providerModal.close();
+  });
+};
+
+
 const displayProviders = (providersList) => {
   providersList.forEach((provider) => {
     const providerCard = document.createElement("div");
     providerCard.setAttribute("class", "card-providers");
-
+    
+    
     const imageDiv = document.createElement("div");
-
     imageDiv.setAttribute("class", "background-div");
-
-    const providerInfoContainer = document.createElement("div");
-
-    providerInfoContainer.setAttribute("class", "info-providers");
-
     imageDiv.style.backgroundImage = `url(${provider.url})`;
-
     imageDiv.innerHTML = `<p>${provider.location}</p>`;
+    
     providerCard.appendChild(imageDiv);
 
+    
+    let providerInfoButton = document.createElement("button");
+    providerInfoButton.setAttribute("class", "provider-info-button");
+    providerInfoButton.innerHTML = `Contact Info`;    
+    
+    const providerInfoContainer = document.createElement("div");
+    providerInfoContainer.setAttribute("class", "info-providers");
+    
     providerInfoContainer.innerHTML = `<h2>${provider.company_name}</h2>
-    <p>${provider.description}</p>
-    <div class="provider-button-container"><button class="provider-info-button">Contact Info</button></div>`;
+    <p>${provider.description}</p>`;        /* <button class="provider-info-button">Contact Info</button> */
+
+
+
+    providerInfoContainer.appendChild(providerInfoButton);
     providerCard.appendChild(providerInfoContainer);
     $providersContainer.appendChild(providerCard);
+
+    providerInfoButton.addEventListener("click", () => displayContactInfo(provider));
   });
+
+
 };
+
+
+window.addEventListener("click", (event) => {
+  if (event.target == providerModal) {
+    providerModal.close();
+  }
+});
+
+/*
+  const buttons = document.querySelectorAll(".provider-info-button");
+  buttons.addEventListener("click", () => displayContactInfo(provider));*/
+
 
 displayProviders(providersList);
 
-
-/*
-
-const courseDialog = document.getElementById("course-details");
-
-function displayCourseDetails(course) {
-  courseDialog.innerHTML = "";
-  courseDialog.innerHTML = `
-    <button id="closeModal">❌</button>
-    <h2>${course.subject} ${course.number}</h2>
-    <h3>${course.title}</h3>
-    <p><strong>Credits</strong>: ${course.credits}</p>
-    <p><strong>Certificate</strong>: ${course.certificate}</p>
-    <p>${course.description}</p>
-    <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
-  `;
-  courseDialog.showModal();
-
-  closeModal.addEventListener("click", () => {
-    courseDialog.close();
-  });
-
-  window.addEventListener("click", (event) => {
-    if (event.target == courseDialog) {
-      courseDialog.close();
-    }
-  });
-
-  };*/
