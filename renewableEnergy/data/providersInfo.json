@@ -27,7 +27,7 @@
       "phone_number": "+54 9 381 4321 8765",
       "website": "https://solartech.com",
       "location": "Córdoba, Argentina",
-      "url": "../images/cordoba.webp"
+      "url": "https://static.vecteezy.com/system/resources/thumbnails/021/746/785/small/holding-a-tree-in-a-ball-ecology-and-environment-concept-with-generative-ai-photo.jpg"
     },
     {
       "id": 4,
@@ -82,7 +82,7 @@
     {
       "id": 9,
       "company_name": "Juan Torres Solar Services",
-      "description": "My goal is to provide high-efficiency solar systems that maximize energy production, even in challenging environments.",
+      "description": "goal is to provide high-efficiency solar systems that maximize energy production, even in challenging environments.",
       "email": "juantorres@gmail.com",
       "phone_number": "+54 9 387 4321 0987",
       "website": null,
@@ -92,7 +92,6 @@
     {
       "id": 10,
       "company_name": "EnergyPros Argentina",
-      "description": "Our mission is to brighten lives by making solar energy simple, affordable, and accessible for all.",
       "email": "info@energypros.com",
       "phone_number": "+54 9 223 3456 7890",
       "website": "https://energypros.com",

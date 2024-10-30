@@ -10,11 +10,16 @@ const providersList = await LoadData(url);
 const displayProviders = (providersList) => {
   providersList.forEach((provider) => {
     let id = 1;
-    console.log(provider);
     const providerCard = document.createElement("div");
     const imageDiv = document.createElement("div");
+
+    imageDiv.setAttribute("class", "card-providers");
+
     const providerInfoContainer = document.createElement("div");
-    imageDiv.style.backgroundImage = provider.url;
+    imageDiv.style.backgroundImage = `url(${provider.url})`;
+
+    console.log(imageDiv.backgroundImage);
+
     imageDiv.innerHTML = `<p>${provider.location}</p>`;
     providerCard.appendChild(imageDiv);
 
