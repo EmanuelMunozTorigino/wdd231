@@ -7,7 +7,7 @@
       "phone_number": "+54 9 11 1234 5678",
       "website": "https://solarsolutions.com",
       "location": "Buenos Aires, Argentina",
-      "url": "../images/buenos-aires.webp"
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/buenos-aires.webp"
     },
     {
       "id": 2,
@@ -17,7 +17,7 @@
       "phone_number": "+54 9 11 9876 5432",
       "website": "https://ecoenergy.com",
       "location": "Rosario, Argentina",
-      "url": "../images/rosario.webp"
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/rosario.webp"
     },
     {
       "id": 3,
@@ -27,7 +27,7 @@
       "phone_number": "+54 9 381 4321 8765",
       "website": "https://solartech.com",
       "location": "Córdoba, Argentina",
-      "url": "https://static.vecteezy.com/system/resources/thumbnails/021/746/785/small/holding-a-tree-in-a-ball-ecology-and-environment-concept-with-generative-ai-photo.jpg"
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/cordoba.webp"
     },
     {
       "id": 4,
@@ -37,7 +37,7 @@
       "phone_number": "+54 9 261 5678 1234",
       "website": "https://greensun.com",
       "location": "Mendoza, Argentina",
-      "url": "../images/mendoza.webp"
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/mendoza.webp"
     },
     {
       "id": 5,
@@ -47,7 +47,7 @@
       "phone_number": "+54 9 221 8765 4321",
       "website": "https://enersys.com",
       "location": "La Plata, Argentina",
-      "url": "../images/la-plata.webp"
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/la-plata.webp"
     },
     {
       "id": 6,
@@ -57,7 +57,7 @@
       "phone_number": "+54 9 11 2345 6789",
       "website": "https://solarworld.com",
       "location": "Buenos Aires, Argentina",
-      "url": "../images/buenos-aires-1.webp"
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/buenos-aires-1.webp"
     },
     {
       "id": 7,
@@ -67,7 +67,7 @@
       "phone_number": "+54 9 351 6543 2109",
       "website": "https://sunrise.com",
       "location": "Córdoba, Argentina",
-      "url": "../images/cordoba-1.webp"
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/cordoba-1.webp"
     },
     {
       "id": 8,
@@ -77,7 +77,7 @@
       "phone_number": "+54 9 261 7890 1234",
       "website": null,
       "location": "Mendoza, Argentina",
-      "url": "../images/mendoza-1.webp"
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/mendoza-1.webp"
     },
     {
       "id": 9,
@@ -87,7 +87,7 @@
       "phone_number": "+54 9 387 4321 0987",
       "website": null,
       "location": "Salta, Argentina",
-      "url": "../images/salta.webp"
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/salta.webp"
     },
     {
       "id": 10,
@@ -96,6 +96,6 @@
       "phone_number": "+54 9 223 3456 7890",
       "website": "https://energypros.com",
       "location": "Mar del Plata, Argentina",
-      "url": "../images/mar-del-plata.webp"
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/mar-del-plata.webp"
     }
   ]
