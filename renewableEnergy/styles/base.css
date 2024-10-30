@@ -252,7 +252,7 @@ select {
 }
 
 
-.calculator-heading {
+.heading1-center {
     text-align: center;
 }
 
@@ -281,46 +281,64 @@ select {
 
 
 
+
 .providers-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;}
-
-
-.container {
-    width: 500px;
-
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(350px , 1fr));
+        grid-gap: 1rem;
+        margin: 1rem;
 }
 
+.card-providers {
+  overflow: hidden;
+  background-color: #fff;
+  width: 350px;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.card-providers:hover {
+transform: scale(1.05);
+}
 
 .background-div {
+    align-content: end;
+    margin: 0;
+    padding: 0;
     width: 100%;            /* Ajusta el ancho del div */
-    height: 400px;          /* Ajusta la altura del div */
+    height: 250px;          /* Ajusta la altura del div */
     background-image: url('https://static.vecteezy.com/system/resources/thumbnails/021/746/785/small/holding-a-tree-in-a-ball-ecology-and-environment-concept-with-generative-ai-photo.jpg');  /* URL de la imagen */
     background-size: cover;  /* Escala la imagen para cubrir todo el div */
     background-position: center;  /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */;
+    filter: blur(.5px);
   }
 
   
-.card-providers {
-background-color: #fff;
-  width: 250px;
-  height: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.background-div p{ 
+    color: #ffffff;
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    background-color: rgba(255, 255, 255,.3);
+    background-color: rgba(0, 0, 0,.7);
+    padding: .5rem;
+    margin: 0;
 }
-  
-.card-providers:hover {
-  transform: scale(1.05);
+
+.info-providers {
+    padding: .5rem;
+    text-align: center;
 }
+
+.info-providers p {
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+/*
 
 .card-header {
   background-color: #1C3D5A;
@@ -350,6 +368,8 @@ background-color: #fff;
 .card-providers a:hover {
   text-decoration: underline;
 }
+
+*/
 
 
 footer {

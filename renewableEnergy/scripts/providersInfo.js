@@ -11,14 +11,17 @@ const displayProviders = (providersList) => {
   providersList.forEach((provider) => {
     let id = 1;
     const providerCard = document.createElement("div");
+    providerCard.setAttribute("class", "card-providers");
+
     const imageDiv = document.createElement("div");
 
-    imageDiv.setAttribute("class", "card-providers");
+    imageDiv.setAttribute("class", "background-div");
 
     const providerInfoContainer = document.createElement("div");
-    imageDiv.style.backgroundImage = `url(${provider.url})`;
 
-    console.log(imageDiv.backgroundImage);
+    providerInfoContainer.setAttribute("class", "info-providers");
+
+    imageDiv.style.backgroundImage = `url(${provider.url})`;
 
     imageDiv.innerHTML = `<p>${provider.location}</p>`;
     providerCard.appendChild(imageDiv);
