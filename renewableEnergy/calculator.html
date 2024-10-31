@@ -40,9 +40,16 @@
                 <fieldset>
                     <legend>Cost information</legend>
     
-                    <label>Monthly consumption (kWh): <input id="consumo" type="number" required></label><br>
-                    <label>Cost per kWh (ARS): <input id="precio" type="number" required></label><br>
+                    <label>Monthly consumption (kWh): <a class="form-reference" href="https://www.argentina.gob.ar/sites/default/files/como_leer_la_factura_electrica_-_ssayee.pdf" target="_blank" rel="noopener noreferrer">* What does it mean?</a> <input id="consumo" type="number" required></label><br>
+                    <label>Cost per kWh (ARS): <a class="form-reference" href="images/tariff-example.webp" target="_blank" rel="noopener noreferrer">* Tariff Cost Refference</a><input id="precio" type="number" required></label><br>
                     <label>Capacidad del sistema (kWh/mes): <input id="capacidad" type="number"></label><br>
+                    <div>System Capacity (kWh/month): <a href="index.html#residential-system"><strong>*</strong>More info</a></div>
+                    <label><input type="radio" name="capacidad" value="small">Small | 2kw - 3kw</label>
+                    <label><input type="radio" name="capacidad" value="medium">Medium | 4kw - 5kw</label>
+                    <label><input type="radio" name="capacidad" value="medium">Large | 6kw - 8kw</label>
+                    <label><input type="radio" name="capacidad" value="medium">Extra Large | 10kw - 12kw</label>
+
+
                     <label>Eficiencia del sistema (%): <input id="eficiencia" type="number"></label><br>
                     <label>Costo de instalación (ARS): <input id="costo" type="number"></label><br>
                 </fieldset>

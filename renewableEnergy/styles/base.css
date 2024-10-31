@@ -230,6 +230,7 @@ nav.show {
 
 /* ----------- Calculator Layout -----------------*/
 
+
 .saving-form fieldset{
     margin: 2rem 2%;
     border: 1px solid #ddd;
@@ -251,6 +252,21 @@ nav.show {
     color: #3f549c;
     font-size: .9rem;
 }
+
+.saving-form div a {
+    text-decoration: none;
+    color: #9c2c13;
+    border-right: 2px solid;
+    padding-right: 2px;
+}
+
+.form-reference {
+    text-decoration: none;
+    border-right: 2px solid;
+    padding-right: 2px;
+    margin-left: 5px;
+}
+
 
 .saving-form textarea {
     display: block;
@@ -282,6 +298,11 @@ nav.show {
     max-width: 400px;
     appearance: none;
 }
+.saving-form input[type="radio"] {
+    margin-right: 6px;
+}
+
+
 select {
     display: block;
     background-color: deeppink;

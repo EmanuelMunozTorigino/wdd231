@@ -4,6 +4,11 @@ function calcularAhorro() {
   );
   const costKwh = parseFloat(document.getElementById("precio").value);
   const systemCapacity = parseFloat(document.getElementById("capacidad").value);
+
+  const systemCapacityRadio = parseFloat(document.querySelector("capacidad").value);
+  
+  
+  
   const efficiency =
     parseFloat(document.getElementById("eficiencia").value) / 100;
   const costoInstalacion = parseFloat(document.getElementById("costo").value);
