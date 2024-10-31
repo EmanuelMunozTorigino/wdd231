@@ -155,6 +155,79 @@ nav.show {
 }
 
 
+.residential-system-container {
+    padding: 1rem;
+}
+.residential-system-container > p{ 
+    text-align: center;
+}
+
+#systems {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+  
+.system-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+  
+.system-card:hover {
+    transform: translateY(-5px);
+}
+  
+.system-card h2 {
+    font-size: 1.5em;
+    color: #1c3d5a;
+    margin-bottom: 10px;
+}
+  
+.system-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}
+  
+
+.factor-consumption-recommendations {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.factor-consumption-recommendations h2 {
+    font-size: 1.5em;
+    color: #1c3d5a;
+    margin-bottom: 10px;
+}
+  
+.factor-consumption-recommendations ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+  
+.factor-consumption-recommendations li {
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #666;
+}
+
+.factor-consumption-recommendations p {
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #666;
+}
+
+
+
+
 /* ----------- Calculator Layout -----------------*/
 
 .saving-form fieldset{
