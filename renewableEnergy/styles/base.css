@@ -285,17 +285,17 @@ select {
 .providers-container {
         display: grid;
         grid-template-columns: repeat(auto-fill , minmax(350px , 1fr));
-        grid-gap: 1.5rem 1rem;
-        margin: 2rem;
+        grid-gap: 1.5rem .5rem;
+        margin-bottom: 1.5rem;
 }
 
 .card-providers {
-  overflow: hidden;
-  background-color: #fff;
-  width: 350px;
-  height: fit-content;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    overflow: hidden;
+    width: 350px;
+    height: fit-content;
+    border: 2px solid;
+    border-radius: 10px;
 }
 
 .card-providers:hover {
@@ -311,7 +311,6 @@ transform: scale(1.05);
     background-size: cover;  
     background-position: center;  
     background-repeat: no-repeat; 
-    /* filter: blur(1px);*/
   }
 
   
@@ -359,20 +358,26 @@ transform: scale(1.05);
     padding: 1rem;
     width: 100%;
     max-width: 350px;
-  }
+    border: 2px solid #1C3D5A;
+}
+.provider-modal h2{
+    margin-top: 0;
+    padding-top: 0;
+}
   
-  ::backdrop {
-    background-color: rgba(0, 0, 0,.4);
+::backdrop {
     filter: blur(10px);
   }
   
 .provider-modal button {
     position: absolute;
     cursor: pointer;
-    top: 15px;
-    right: 15px;
-    padding: .5rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #1C3D5A;
+    color: #ffffff;
+    top: 10px;
+    right: 10px;
+    padding: .3rem 1rem;
+    border-radius: 5px;
   }
 
 
