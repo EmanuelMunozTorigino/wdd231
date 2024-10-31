@@ -98,5 +98,25 @@
       "website": "https://energypros.com",
       "location": "Mar del Plata, Argentina",
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/mar-del-plata.webp"
+    },
+    {
+      "id": 10,
+      "company_name": "SolarEase Installations",
+      "description": "Deliver hassle-free solar installations that lower energy bills and support a sustainable future.",
+      "email": "contact@solarease.com",
+      "phone_number": "+54 376 432-5678",
+      "website": "https://www.solarease.com",
+      "location": "Misiones, Argentina",
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/misiones.webp"
+    },
+    {
+      "id": 11,
+      "company_name": "Radiant Energy Co.",
+      "description": "Make renewable energy accessible with efficient solar solutions tailored to every client's needs.",
+      "email": "support@radiantenergy.com",
+      "phone_number": "+54 370 455-6789",
+      "website": "https://www.radiantenergy.com",
+      "location": "Formosa, Argentina",
+      "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/formosa.webp"
     }
   ]
