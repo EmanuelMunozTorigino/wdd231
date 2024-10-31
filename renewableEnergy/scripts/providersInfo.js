@@ -44,7 +44,8 @@ const displayProviders = (providersList) => {
     const providerInfoContainer = document.createElement("div");
     providerInfoContainer.setAttribute("class", "info-providers");
 
-    providerInfoContainer.innerHTML = `<h2>${provider.company_name}</h2>
+    providerInfoContainer.innerHTML = `
+    <h2>${provider.company_name}</h2>
     <p>${provider.description}</p>`; /* <button class="provider-info-button">Contact Info</button> */
 
     providerInfoContainer.appendChild(providerInfoButton);

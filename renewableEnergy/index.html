@@ -15,6 +15,8 @@
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/hamburgerMenu.js" defer></script>
     <script src="scripts/navActiveEffect.js" defer></script>
+    <script type="module" src="scripts/countries.js" defer></script>
+    <script type="module" src="scripts/functionality.js"></script>
 </head>
 <body>
     <header class="header">
@@ -33,6 +35,7 @@
     </header>
 
     <main>
+        <modal id="countriesModal"></modal>
         <div>
             <img class="hero-img"  src="images/solar-energy-heroimg.jpg" alt="an image of solar panel in the time of sunshine">
             <div class="hero-msg">
@@ -46,6 +49,11 @@
             <button><a href="calculator.html">Energy Savings Calculator</a></button>
             <button><a href="providers.html">View Local Providers</a></button>
         </section>
+
+        <article>
+            <h2>Global leaders in Solar Energy initiatives</h2>
+            <section class="providers-container" id="countriesContainer"></section>
+        </article>
 
         <section class="news">
             <h2>Latest News</h2>
