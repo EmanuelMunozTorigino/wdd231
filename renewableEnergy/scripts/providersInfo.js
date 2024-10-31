@@ -18,6 +18,7 @@ const displayContactInfo = (provider) => {
     <p><strong>Email</strong>: ${provider.email}</p>
     <p><strong>Website</strong>: <a href="${provider.website}">${provider.website}</a></p>
     `;
+    
   providerModal.showModal();
 
   closeModal.addEventListener("click", () => {

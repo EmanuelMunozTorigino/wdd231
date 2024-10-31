@@ -1,10 +1,24 @@
-import {countries} from "./functionality.js";
-
-
+import { countries } from "./functionality.js";
 
 const $countriesContainer = document.getElementById("countriesContainer");
 
 const providerModal = document.getElementById("countriesModal");
+
+const displayContactInfo = (country) => {
+  providerModal.innerHTML = "";
+  providerModal.innerHTML = `
+        <button id="closeModal">X</button>
+        <h2>${country.name}</h2>
+        <p><strong>Details</strong>: ${country.details}</p>
+        <p><strong>Incentives</strong>: ${country.incentives}</p>
+        `;
+
+  providerModal.showModal();
+
+  closeModal.addEventListener("click", () => {
+    providerModal.close();
+  });
+};
 
 const displayCountries = (countries) => {
   countries.forEach((country) => {
@@ -36,7 +50,17 @@ const displayCountries = (countries) => {
     countryCard.appendChild(countryDetails);
     console.log(countryCard);
     $countriesContainer.appendChild(countryCard);
+
+    countryDetailsButton.addEventListener("click", () =>
+      displayContactInfo(country)
+    );
   });
 };
+
+window.addEventListener("click", (event) => {
+  if (event.target == providerModal) {
+    providerModal.close();
+  }
+});
 
 displayCountries(countries);
