@@ -14,8 +14,7 @@
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/hamburgerMenu.js" defer></script>
     <script src="scripts/navActiveEffect.js" defer></script>
-    <script src="scripts/calculateSaving.js" defer></script>
-
+<!-- <script src="scripts/calculateSaving.js" defer></script>-->
 </head>
 <body>
     <header class="header">
@@ -38,31 +37,30 @@
         <section class="form-container">
             <form class="saving-form">
                 <fieldset>
-                    <legend>Cost information</legend>
-    
-                    <label>Monthly consumption (kWh): <a class="form-reference" href="https://www.argentina.gob.ar/sites/default/files/como_leer_la_factura_electrica_-_ssayee.pdf" target="_blank" rel="noopener noreferrer">* What does it mean?</a> <input id="consumo" type="number" required></label><br>
-                    <label>Cost per kWh (ARS): <a class="form-reference" href="images/tariff-example.webp" target="_blank" rel="noopener noreferrer">* Tariff Cost Refference</a><input id="precio" type="number" required></label><br>
-                    <label>Capacidad del sistema (kWh/mes): <input id="capacidad" type="number"></label><br>
-                    <div>System Capacity (kWh/month): <a href="index.html#residential-system"><strong>*</strong>More info</a></div>
-                    <label><input type="radio" name="capacidad" value="small">Small | 2kw - 3kw</label>
-                    <label><input type="radio" name="capacidad" value="medium">Medium | 4kw - 5kw</label>
-                    <label><input type="radio" name="capacidad" value="medium">Large | 6kw - 8kw</label>
-                    <label><input type="radio" name="capacidad" value="medium">Extra Large | 10kw - 12kw</label>
 
-
-                    <label>Eficiencia del sistema (%): <input id="eficiencia" type="number"></label><br>
-                    <label>Costo de instalación (ARS): <input id="costo" type="number"></label><br>
+                    <legend>Cost information </legend>
+                    <a class="form-reference" href="images/tariff-example.webp" target="_blank" rel="noopener noreferrer">* Tariff Cost Refference</a>
+                    <label>Monthly consumption (kwh/ARS): <a class="form-reference" href="https://www.argentina.gob.ar/sites/default/files/como_leer_la_factura_electrica_-_ssayee.pdf" target="_blank" rel="noopener noreferrer">* What does it mean?</a> <input id="consumption" type="number" required></label><br>
+                    <div>Category: (e.g. FAMILIAR - N3)</div>
+                    <label><input type="radio" name="category" value="N1">N1</label>
+                    <label><input type="radio" name="category" value="N2">N2</label>
+                    <label><input type="radio" name="category" value="N3">N3</label>
+                    <div>System Capacity (kw): <a href="index.html#residential-system"><strong>*</strong>More info</a></div>
+                    <label><input type="radio" name="capacity" value="small">Small | 2kw - 3kw</label>
+                    <label><input type="radio" name="capacity" value="medium">Medium | 4kw - 5kw</label>
+                    <label><input type="radio" name="capacity" value="large">Large | 6kw - 8kw</label>
+                    <label><input type="radio" name="capacity" value="extraLarge">Extra Large | 10kw - 12kw</label>
                 </fieldset>
-                <button class="form-button" onclick="calcularAhorro()">Compute cost & savings</button>
-            </form>
-                    
-                    <div id="result" style="display:none;">
-                        <h2>Estimated Savings:</h2>
-                        <p id="savings"></p>
-                    </div>
+                <input type="submit" value="Compute cost & savings">
+</form>
+
+<div id="result" style="display:none;">
+    <h2>Estimated Savings:</h2>
+        <p id="savings"></p>
+        </div>
             
             
-            <form method="GET" action="thankyou.html" class="saving-form" id="savings-form">
+                <form method="GET" action="thankyou.html" class="saving-form" id="savings-form">
                 <fieldset>
                     <legend>Personal information </legend>
                     <label>First Name* <input type="text" name="fname" autocomplete="given-name" title="Given Name" required></label>
@@ -75,20 +73,23 @@
                 </fieldset>
                     <input type="submit" value="Contact Us">
                    
-            </form>
-        </section>
-    </main>
+                </form>
     
-    <footer>
-        <section>
+            </section>
+            
+        </main>
+        
+        <footer>
+            <section>
             <p>Emanuel Muñoz Torigino | <a href="https://www.byupathway.edu/" target="_blank" rel="noopener noreferrer">Pathway-Connect</a> @BYU-Idaho</p>
             <a href="attributions.html">Attributions</a> | <a href="site-plan.html">site plan</a>
         </section>
         <section>
-        <strong><p>&copy;<span id="currentYear"></span> Solar Synergy. All rights reserved.</p></strong>
+            <strong><p>&copy;<span id="currentYear"></span> Solar Synergy. All rights reserved.</p></strong>
             <p>The future is right there | WDD-231</p>
             <p id="lastModified"></p>
         </section>
     </footer>
+    <script type="module" src="scripts/calculator.js" defer></script>
 </body>
 </html>
