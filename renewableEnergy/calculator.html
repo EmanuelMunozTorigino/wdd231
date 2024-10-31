@@ -9,14 +9,25 @@
     <meta property="author" content="Emanuel Muñoz Torigino">
     <meta property="description" content="Calculate Your Solar Savings & get in Touch for Solar Energy Info.">
 
-
+    <!-- open Graph (Facebook, Whatsapp, Instagram)  -->
     <meta property="og:title" content="Calculate Your Solar Savings & get in Touch for Solar Energy Info">
     <meta property="og:description" content="Have questions about solar energy? Fill out our contact form. Use our free calculator of savings.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/calculator.html">
-    <meta property="og:image" content="https://yourwebsite.com/images/contact-icon.jpg">
+    <meta property="og:image" content="https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/calculator-social-media.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+
+
+    
+    <!-- X (twitter)-->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@"/>
+    <meta name="twitter:title" content="Calculate Your Solar Savings & get in Touch for Solar Energy Info"/>
+    <meta name="twitter:description" content="Have questions about solar energy? Fill out our contact form. Use our free calculator of savings."/>
+    <meta name="twitter:image" content="https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/calculator-social-media.jpg"/>
+        
+
 
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -66,14 +77,8 @@
                     <label><input type="radio" name="capacity" value="extraLarge">Extra Large | 10kw - 12kw</label>
                 </fieldset>
                 <input type="submit" value="Compute cost & savings">
-</form>
-
-<div id="result" style="display:none;">
-    <h2>Estimated Savings:</h2>
-        <p id="savings"></p>
-        </div>
-            
-            
+            </form>
+                 
                 <form method="GET" action="thankyou.html" class="saving-form" id="savings-form">
                 <fieldset>
                     <legend>Personal information </legend>
@@ -88,9 +93,17 @@
                     <input type="submit" value="Contact Us">
                    
                 </form>
-    
+            
+                        
+                <div id="result" style="display:none;">
+                    <h2>Estimated Savings:</h2>
+                    <p id="savings"></p>
+                </div>
+
             </section>
             
+
+
         </main>
         
         <footer>
