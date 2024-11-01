@@ -15,7 +15,7 @@
       "description": "We aim to empower homeowner and businesse by providing innovative solar solutions to reduce energy bill and carbon footprint.",
       "email": "info@ecoenergy.com",
       "phone_number": "+54 9 11 9876 5432",
-      "website": "https://ecoenergy.com",
+      "website": "https://ecoenergy.com.ar/",
       "location": "Rosario, Argentina",
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/rosario.webp"
     },
@@ -25,7 +25,7 @@
       "description": "Our goal is to deliver reliable solar systems that ensure energy independence and long-term sustainability.",
       "email": "support@solartech.com",
       "phone_number": "+54 9 381 4321 8765",
-      "website": "https://solartech.com",
+      "website": "https://solartec.com.ar/",
       "location": "Córdoba, Argentina",
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/cordoba.webp"
     },
@@ -71,11 +71,11 @@
     },
     {
       "id": 7,
-      "company_name": "SolarMax Installations",
-      "description": "SolarMax is dedicated to creating smart solar solutions that align with modern lifestyles and environmental values.",
+      "company_name": "GenSolar",
+      "description": "GenSolar is dedicated to creating smart solar solutions that align with modern lifestyles and environmental values.",
       "email": "contact@solarmax.com",
       "phone_number": "+54 9 261 7890 1234",
-      "website": null,
+      "website": "https://gensolar.com.ar/",
       "location": "Mendoza, Argentina",
       "url": "https://emanuelmunoztorigino.github.io/wdd231/renewableEnergy/images/mendoza-1.webp"
     },
