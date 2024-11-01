@@ -33,6 +33,7 @@ const displayProviders = (providersList) => {
 
     const imageDiv = document.createElement("div");
     imageDiv.setAttribute("class", "background-div");
+    imageDiv.setAttribute("loading", "lazy");
     imageDiv.style.backgroundImage = `url(${provider.url})`;
     imageDiv.innerHTML = `<p>${provider.location}</p>`;
 

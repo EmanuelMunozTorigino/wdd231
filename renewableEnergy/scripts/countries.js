@@ -24,6 +24,7 @@ const displayCountries = (countries) => {
   countries.forEach((country) => {
     const countryCard = document.createElement("div");
     countryCard.setAttribute("class", "card-providers");
+    countryCard.setAttribute("loading", "lazy");
 
     const imageDiv = document.createElement("div");
     imageDiv.setAttribute("class", "background-div");
