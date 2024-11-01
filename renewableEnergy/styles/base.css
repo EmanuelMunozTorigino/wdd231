@@ -337,7 +337,7 @@ select {
     padding: .75rem;
     width: 96%;
     max-width: 400px;
-    margin: -1rem 0 2rem 4%;
+    margin: -1rem 2% 2rem 2%;
 }
 
 .saving-form input:required {
@@ -364,7 +364,7 @@ select {
     border-bottom-right-radius: 15px;
     margin: 1rem auto;
     width: 90%;
-    height: fit-content;
+    height: auto;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -373,6 +373,12 @@ select {
 .form-results li{
     padding: .3rem;
     margin: 0 auto;
+}
+.form-results p{ 
+    overflow-wrap: break-word; /* Alternativa más moderna */
+    padding: .5rem;
+    margin: .5rem auto;
+    
 }
 
 

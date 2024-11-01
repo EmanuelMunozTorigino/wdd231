@@ -28,4 +28,5 @@ showInfo.innerHTML = `
 <li>Your Phone: <strong>${show("phone")}</strong></li>
 <li>Your Email: <a href="mailto:${show("email")}">${show("email")}</a></li>
 </ul>
-<li>The details of the consult is: <strong>${show("details")}</strong></li>`;
+<p>The details of the consult is: <strong>${show("details")}</strong></p>
+`;
