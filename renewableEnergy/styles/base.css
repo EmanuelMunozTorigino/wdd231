@@ -126,7 +126,8 @@ nav.show {
     text-align: center;
 }
 
-.cta button {
+.cta div {
+    display: inline-block;
     background: #4CAF50;
     color: white;
     border: none;
@@ -136,7 +137,7 @@ nav.show {
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.cta button a {
+.cta div a {
     padding: 7px 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -145,7 +146,7 @@ nav.show {
     color: #1C3D5A;
     font-weight: 600;
 }
-.cta button a:hover {
+.cta div a:hover {
     color: #ffffff;
     background-color: #1C3D5A;
 
@@ -255,7 +256,6 @@ nav.show {
 
 .saving-form div a {
     text-decoration: none;
-    color: #9c2c13;
     border-right: 2px solid;
     padding-right: 2px;
 }
