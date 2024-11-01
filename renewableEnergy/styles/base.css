@@ -364,6 +364,7 @@ select {
     border-bottom-right-radius: 15px;
     margin: 1rem auto;
     width: 90%;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     align-content: center;

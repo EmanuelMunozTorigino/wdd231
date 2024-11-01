@@ -16,9 +16,9 @@ const displayContactInfo = (provider) => {
     <h2>${provider.company_name}</h2>
     <p><strong>Phone Number</strong>: ${provider.phone_number}</p>
     <p><strong>Email</strong>: ${provider.email}</p>
-    <p><strong>Website</strong>: <a href="${provider.website}">${provider.website}</a></p>
+    <p><strong>Website</strong>: <a href="${provider.website} rel="noopener noreferrer">${provider.website}</a></p>
     `;
-    
+
   providerModal.showModal();
 
   closeModal.addEventListener("click", () => {
